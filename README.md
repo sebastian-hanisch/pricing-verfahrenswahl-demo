@@ -1,7 +1,6 @@
 # Verfahrenswahl im Pricing: welche Bausteine für welche Aufgabe? – Streamlit-Demo
 
-<!-- Nach dem Deploy hier direkt den Live-Link einsetzen (Leerzeile davor und danach):
-**[→ Demo live ausprobieren](https://sebastianhanisch-pricing-verfahrenswahl-demo.streamlit.app/)** -->
+**[→ Demo live ausprobieren](https://sebastianhanisch-pricing-verfahrenswahl-demo.streamlit.app/)**
 
 Demo der Reihe „Ressourcenwege und Spaltenerzeugung“ in der „Konzepte“-Reihe der Website „Sebastian Hanisch – Operations Research und Machine Learning“. Sie ist das Ende der Reihe: Die anderen Demos haben die **Bausteine des Pricings** einzeln gezeigt, diese fragt, **für eine gegebene Aufgabe in welcher Reihenfolge man welchen Baustein zuschaltet und wann er sich nicht lohnt.** Sie baut kein neues Verfahren und rechnet fast nichts selbst: Ein **Entscheidungsbaum** liest feste Messwerte der anderen Demos und nennt bei jeder Empfehlung die Messzahl, die Voraussetzung (Kundenzahl, Fensterbreite, Verteilung, Zahl der Instanzen) und die Quelle. Ein Baustein ohne Messung für Kundenzahl, Fensterbreite und Verteilung der Aufgabe wird nicht empfohlen; die Messungen der Bausteine gelten bei ihrem eigenen ng-Gedächtnis (k = 5 oder 8), nicht bei dem k, das die Auswahlregel nennt. Gerechnet wird nur eine **Auswahlregel** für das ng-Gedächtnis k.
 
