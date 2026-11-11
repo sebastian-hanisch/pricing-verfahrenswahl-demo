@@ -1,0 +1,237 @@
+"""Baut `data/messwerte.json` und `data/k_zellen.json` aus den Messdateien der anderen Demos der Linie (und der Vormessung).
+
+Aufruf (im Ordner der Demo): `_venvs/test/Scripts/python.exe tools/messwerte_bauen.py` (schreibt) oder mit `--pruefen` (vergleicht nur, schreibt nichts).
+Die App liest nur die beiden JSON-Dateien. Jede Zeile von `messwerte.json` nennt Quelle (Demo, Datei, Stelle), Voraussetzung und den Bereich (Kundenzahl, Fensterbreite, Typ),
+für den die Zahl gemessen ist; der Entscheidungsbaum empfiehlt nur innerhalb dieses Bereichs. `tests/test_quellen.py` liest die Quellzeilen noch einmal aus den Dateien der Quell-Demos."""
+
+import json
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import pvw_quellen as Q  # noqa: E402
+
+DATA = Path(__file__).resolve().parents[1] / "data"
+STELLEN = 6
+
+# Jede Zeile: id, stueck, baustein, extraktor (Name in pvw_quellen.EXTRAKTOREN oder None), praefix (nur Schlüssel mit diesem Anfang, ohne ihn gespeichert),
+# werte (nur wenn kein Extraktor), bereich (n, breite, typ; None = ohne Einschränkung), voraussetzung, quelle (demo, datei, stelle), readme (Fragmente, die in der README der Quell-Demo stehen müssen).
+ZEILEN = [
+    {
+        "id": "dml_regeln", "stueck": 2, "baustein": "Dominanz in allen Ressourcen", "extraktor": "dml_regeln",
+        "bereich": {"n": [7], "breite": [30, 80, 200], "typ": ["zufällig"]},
+        "voraussetzung": "7 Kunden, 60 Instanzen mal Fensterbreite 30, 80, 200 (180 Fälle), zufällige Dualpreise, ein Pricing-Aufruf",
+        "quelle": {"demo": "dominanz-labels-demo", "datei": "data/regeltabelle.json", "stelle": "verfehlung_nur_kosten.faelle, verhaeltnis_keine_zu_voll.median"},
+        "readme": ["In 67 von 180 Fällen (37,2 %)", "das 1,42-Fache der Labels der vollen Regel"],
+    },
+    {
+        "id": "wmg_breite", "stueck": 1, "baustein": "Ressourcenweg mit Zeitgrenze", "extraktor": "wmg_fensterbreite",
+        "bereich": {"n": [30], "breite": [40, 100, 200], "typ": None},
+        "voraussetzung": "30 Kunden, Kapazität 70, ganze Spaltenerzeugung bis zur Konvergenz (Summe der Labels aller Pricing-Aufrufe), 6 Instanzen je Zelle, Median; frühere Messreihe, in der Quell-Demo nicht neu gerechnet",
+        "quelle": {"demo": "weg-mit-grenzen-demo", "datei": "data/baender_fensterbreite.json", "stelle": "zeilen[].labels_median, je Breite und k"},
+        "readme": ["| 40 | 1 | 16 938,5 | 18 507,0 |", "| 200 | 1 | 160 456,5 |"],
+    },
+    {
+        "id": "zfl_pricing", "stueck": 3, "baustein": "Zeitfenster und Warten", "extraktor": "zfl_pricing_aufruf",
+        "bereich": {"n": [30], "breite": [20, 40, 100, 150, 200], "typ": ["zufällig", "gruppiert"]},
+        "voraussetzung": "30 Kunden, ng-Gedächtnis 5, ein Pricing-Aufruf mit den Dualpreisen der ersten Runde, 12 Instanzen je Zelle, Median der erzeugten Labels",
+        "quelle": {"demo": "zeitfenster-labeling-demo", "datei": "data/band_p03.json", "stelle": "zeilen[].median, je Typ und Breite"},
+        "readme": ["| 150 | 22.870 |", "| 150 | 42.178 |"],
+    },
+    {
+        "id": "pdp_glaettung", "stueck": 5, "baustein": "Glättung der Dualpreise", "extraktor": "pdp_glaettung",
+        "bereich": {"n": [30], "breite": [100], "typ": ["zufällig"]},
+        "voraussetzung": "30 Kunden, Breite 100, ng-Gedächtnis 5, Überdeckungs-Master, 6 Instanzen, einfache Glättung zur Vorrunde (nicht Wentges, nicht du Merle)",
+        "quelle": {"demo": "pricing-dualpreise-demo", "datei": "data/baender_glaettung.json", "stelle": "zeilen[] mit n = 30, je α: Mittel von instanzen[].runden"},
+        "readme": ["| 0,8 | 24,3 | 22,5 | 34 |", "| 0,9 | 34,2 | 32,0 | 50 |"],
+    },
+    {
+        "id": "kip_kreisanteil", "stueck": 6, "baustein": "Kreise im Pricing erlauben", "extraktor": "kip_kreisanteil",
+        "bereich": {"n": [30], "breite": [40, 100, 200], "typ": ["zufällig"]},
+        "voraussetzung": "30 Kunden, zufällig, Kreise erlaubt (k = 1), Überdeckungs-Master, 6 Instanzen je Breite, neue Spalten aller Runden",
+        "quelle": {"demo": "kreise-im-pricing-demo", "datei": "data/baender_kreise.json", "stelle": "zellen[] mit n = 30, k = 1: Summe von zeilen[].mit_kreis und neue_spalten"},
+        "readme": ["Breite 100: 865 von 1 206 (71,7 %)"],
+    },
+    {
+        "id": "kip_luecke", "stueck": 6, "baustein": "Kreise im Pricing erlauben", "extraktor": "kip_luecke",
+        "bereich": {"n": [30], "breite": [40, 100], "typ": ["zufällig"]},
+        "voraussetzung": "30 Kunden, zufällig, 6 Instanzen je Breite, Lücke der Schranke von k = 1 zur elementaren Schranke, alle elementaren Läufe fertig (Obergrenze 600 Millionen Dominanztests)",
+        "quelle": {"demo": "kreise-im-pricing-demo", "datei": "data/baender_luecke.json", "stelle": "zellen[] mit bezug = elementar, n = 30: (schranke_ref - schranke_k1) / schranke_ref"},
+        "readme": ["Breite 100: Mittel 5,45 / 4,47 / 4,42 / 3,98 / 3,33 %"],
+    },
+    {
+        "id": "epr_abbrueche", "stueck": 7, "baustein": "Elementar rechnen", "extraktor": "epr_abbrueche",
+        "bereich": {"n": [30], "breite": [40, 100, 200], "typ": ["zufällig"]},
+        "voraussetzung": "30 Kunden, zufällig, elementar (k = n), Überdeckungs-Master, 6 Instanzen je Breite, Zeitgrenze 30 s je Pricing-Aufruf (hängt von Rechner und Last ab)",
+        "quelle": {"demo": "elementar-pricing-demo", "datei": "data/laeufe.json, data/vormessung.json", "stelle": "Zeilen n = 30, k = 30: Zahl der abgebrochenen Läufe; V1-Zeilen der früheren Messung"},
+        "readme": ["Breite 40: 0 von 6, Breite 100: 4 von 6, Breite 200: 6 von 6 abgebrochen"],
+    },
+    {
+        "id": "ngr_elementar_gross", "stueck": 9, "baustein": "Elementar rechnen", "extraktor": "ngr_elementar_gross_und_klein", "praefix": "gross_",
+        "bereich": {"n": [50, 100], "breite": [20, 40, 100], "typ": ["zufällig", "gruppiert"]},
+        "voraussetzung": "50 und 100 Kunden: 8 Zellen mit je 12 Instanzen (zufällig und gruppiert; 50 Kunden mit Breite 40 und 100, 100 Kunden mit Breite 20 und 40), elementarer Lauf mit der Zeitgrenze der Messung",
+        "quelle": {"demo": "ng-routen-demo", "datei": "data/skalierung.json", "stelle": "Zeilen mit k = n: Zahl der abgebrochenen Läufe"},
+        "readme": ["die elementare Rechnung ist in 94 von 96 Läufen abgebrochen"],
+    },
+    {
+        "id": "ngr_elementar_klein", "stueck": 9, "baustein": "Elementar rechnen", "extraktor": "ngr_elementar_gross_und_klein", "praefix": "klein_",
+        "bereich": {"n": [10, 15, 20, 25], "breite": [40, 100], "typ": ["zufällig"]},
+        "voraussetzung": "10, 15, 20 und 25 Kunden, zufällig, Breite 40 und 100, 6 Instanzen je Zelle, Überdeckungs-Master, elementarer Lauf mit Zeitgrenze der Messung",
+        "quelle": {"demo": "ng-routen-demo", "datei": "data/elementar.json", "stelle": "Zeilen mit n von 10 bis 25 und k = n: Zahl der abgebrochenen Läufe"},
+        "readme": ["alle elementaren Läufe fertig"],
+    },
+    {
+        "id": "ngr_kzyklen", "stueck": 9, "baustein": "k-Zyklen statt ng-Gedächtnis", "extraktor": "ngr_k_zyklen",
+        "bereich": {"n": [30], "breite": [100], "typ": ["zufällig", "gruppiert"]},
+        "voraussetzung": "30 Kunden, Breite 100, je 12 zufällige und gruppierte Instanzen (24), Überdeckungs-Master, Bezug ng k = 8, eigene Dominanzregel für k-Zyklen (nicht die von Irnich und Villeneuve), abgebrochene Läufe nicht eingerechnet",
+        "quelle": {"demo": "ng-routen-demo", "datei": "data/knick_n30.json", "stelle": "Zeilen art = kcyc (K = 2, 3, 4) und art = ng (k = 5, 8): Lücke zur Schranke von ng k = 8, Labels im Verhältnis zu ng k = 8"},
+        "readme": ["| k-Zyklen K = 2 | 24 / 0 | 0,469 (1,583) | 1,69 |", "| ng k = 5 | 24 / 0 | 0,115 (0,898) | 0,80 |", "| k-Zyklen K = 4 | 15 / 9 |"],
+    },
+    {
+        "id": "ngr_dssr", "stueck": 9, "baustein": "DSSR statt ng-Gedächtnis", "extraktor": "ngr_dssr",
+        "bereich": {"n": [30], "breite": [100], "typ": ["zufällig", "gruppiert"]},
+        "voraussetzung": "30 Kunden, Breite 100, 72 feste Dualpreis-Sätze (Runde 2, Runde 4, Ende der Spaltenerzeugung; je 12 zufällige und gruppierte Instanzen), nur je Pricing-Aufruf gemessen, nicht in der Schleife; eigene Variante nach dem Abstract von Righini und Salani",
+        "quelle": {"demo": "ng-routen-demo", "datei": "data/dssr.json", "stelle": "zeilen[]: rc und labels von dssr, ng5, elem"},
+        "readme": ["| Labels DSSR / ng k = 5 (Mittel der Verhältnisse) | 6,3 |", "24 von 72 (Runde 2: 13, Runde 4: 11, Ende: 0 von 24)", "| Labels DSSR / ng k = 5 am Ende der Spaltenerzeugung | 11,6 |"],
+    },
+    {
+        "id": "mgr_v11", "stueck": 4, "baustein": "Mehrere Ressourcengrenzen", "extraktor": "mgr_v11",
+        "bereich": {"n": [30], "breite": [100], "typ": ["zufällig"]},
+        "voraussetzung": "30 Kunden, zufällig, Breite 100, ng-Gedächtnis 1, ganze Spaltenerzeugung, Grenze 70 je Zusatzgröße (bindend), unabhängige Zufallsverbräuche, Median über 12 Instanzen; r = 1 ist nur die Zeit",
+        "quelle": {"demo": "mehrere-grenzen-demo", "datei": "data/baender_v11.json", "stelle": "zellen[] mit typ = zufall, breite = 100, k = 1, art = colgen, Grenze nur Zeit bzw. bindend (70): Median von dominiert/labels und vergleiche/labels"},
+        "readme": ["Anteil dominiert 91,0 → 87,6 → 83,7 → 81,0 %; Vergleiche je Label 2,8 → 7,4 → 13,6 → 17,9"],
+    },
+    {
+        "id": "mgr_korreliert", "stueck": 4, "baustein": "Mehrere Ressourcengrenzen, abhängige Verbräuche", "extraktor": None,
+        "werte": {
+            "instanzen": 12, "unabhaengig_r1": 88.8, "unabhaengig_r2": 84.4, "unabhaengig_r3": 81.5, "unabhaengig_r4": 76.8,
+            "gleich_last_r2": 84.4, "gleich_last_r3": 84.4, "gleich_last_r4": 84.4,
+            "rauschen_r2": 84.4, "rauschen_r3": 83.3, "rauschen_r4": 82.0,
+            "gegenlaeufig_r2": 84.4, "gegenlaeufig_r3": 78.7, "gegenlaeufig_r4": 74.5,
+        },
+        "bereich": {"n": [30], "breite": [100], "typ": ["zufällig"]},
+        "voraussetzung": "30 Kunden, zufällig, Breite 100, ng-Gedächtnis 5, ein Pricing-Aufruf, nie bindende Grenzen, Median über 12 Instanzen, vier Verbrauchsmodelle (unabhängig, Fahrerzeit und dritte Größe gleich der Last, Last plus Rauschen, gegenläufig); Anteil dominierter Labels; andere Zelle als die der Stufe „Wie viele Ressourcengrenzen?“",
+        "quelle": {"demo": "mehrere-grenzen-demo", "datei": "README.md", "stelle": "Tabelle „Befunde (gemessen, keine Behauptungen)“, Zeilen F bis I: Anteil dominiert je Verbrauchsmodell"},
+        "readme": ["Anteil dominiert 88,8 → 84,4 → 81,5 → 76,8 %", "Anteil dominiert bei r = 2 bis 4 jeweils 84,4 %", "Anteil dominiert 84,4 → 83,3 → 82,0 %", "Anteil dominiert 84,4 → 78,7 → 74,5 %"],
+    },
+    {
+        "id": "bdl_v9", "k_gemessen": [5, 8], "stueck": 11, "baustein": "Bidirektionales Labeling", "extraktor": "bdl_v9",
+        "bereich": {"n": [30], "breite": [40, 100], "typ": ["zufällig", "gruppiert"]},
+        "voraussetzung": "30 Kunden, Breite 40 und 100, zufällig und gruppiert, Kapazität 70 (k = 5 und 8) und 120 (k = 5), je 10 Instanzen, Dualpreise aus den Runden 1, 3, 8 und vom Ende: 480 Läufe; Labels im Verhältnis zum einseitigen Lauf, fester Halbweg H/2",
+        "quelle": {"demo": "bidirektional-labeling-demo", "datei": "data/baender_v9.json", "stelle": "zeilen[].laeufe[].v: fest0.5, dynD und uni, Feld labels bzw. paare"},
+        "readme": ["| fest H/2 | 0,27 | 0,11 bis 0,79 | 480 von 480 |", "das 9,8-Fache der einseitigen Label-Zahl", "dynD erzeugt in 0 von 480 Läufen weniger Labels als fest H/2", "| dynamisch, zurückgestellt | 0,68 |"],
+    },
+    {
+        "id": "ksp_n30", "k_gemessen": [8], "stueck": 13, "baustein": "Kantenstreichung", "extraktor": "ksp_n30",
+        "bereich": {"n": [30], "breite": [40, 100], "typ": ["zufällig", "gruppiert"]},
+        "voraussetzung": "30 Kunden, ng k = 8, Partitionierungs-Master, metrische Kosten, 12 Instanzen je Zelle, nur bei den Dualpreisen der Konvergenz gemessen; Nutzen in späteren Pricing-Aufrufen nicht gemessen",
+        "quelle": {"demo": "kantenstreichung-pricing-demo", "datei": "data/baender_kanten.json", "stelle": "zellen[] mit n = 30: wirkung.ub3 (exakte Lücke) und wirkung.ub1 (obere Schranke aus den Spalten) je Instanz"},
+        "readme": ["im Mittel 46 bis 61 % (Einzelwerte 10 bis 83 %)", "exakte Lücke 0,34 bis 0,52", "Schranke 1 nur 22 bis 42 %", "Schranke 1 0,56 bis 0,80"],
+    },
+    {
+        "id": "hpr_labels_b100", "k_gemessen": [8], "stueck": 14, "baustein": "Heuristisches Pricing", "extraktor": "hpr_v13", "praefix": "b100_",
+        "bereich": {"n": [30], "breite": [100], "typ": ["zufällig", "gruppiert"]},
+        "voraussetzung": "30 Kunden, Breite 100, ng k = 8, Überdeckungs-Master, 15 zufällige und 15 gruppierte Instanzen, Etikettenlimit L = 5, 10, 20 je Kunde; Mittel der Instanz-Verhältnisse zum immer exakten Pricing; Neurechnung der Quell-Demo, Zeile für Zeile mit der Rohausgabe der Vormessung verglichen",
+        "quelle": {"demo": "heuristisches-pricing-demo", "datei": "data/laeufe_v13.json", "stelle": "laeufe[] mit breite = 100: je Variante exakt, L5, L10, L20 die Felder labels, iterationen (Runden), schranke"},
+        "readme": ["Im Mittel der Verhältnisse 0,52 / 0,60 / 0,71 der Labels bei Limit 5 / 10 / 20", "also +36 / +23 / +10 %"],
+    },
+    {
+        "id": "hpr_labels_b150", "k_gemessen": [8], "stueck": 14, "baustein": "Heuristisches Pricing", "extraktor": "hpr_v13", "praefix": "b150_",
+        "bereich": {"n": [30], "breite": [150], "typ": ["zufällig", "gruppiert"]},
+        "voraussetzung": "30 Kunden, Breite 150, ng k = 8, Überdeckungs-Master, 8 zufällige und 8 gruppierte Instanzen, Etikettenlimit L = 5, 10, 20; Mittel der Instanz-Verhältnisse zum immer exakten Pricing; Neurechnung der Quell-Demo, mit der Vormessung verglichen",
+        "quelle": {"demo": "heuristisches-pricing-demo", "datei": "data/laeufe_v13.json", "stelle": "laeufe[] mit breite = 150: je Variante exakt, L5, L10, L20 die Felder labels, iterationen (Runden), schranke"},
+        "readme": ["| … bei Breite 150? | Im Mittel 0,43 / 0,49 / 0,63"],
+    },
+    {
+        "id": "hpr_zeit", "k_gemessen": [8], "stueck": 14, "baustein": "Heuristisches Pricing", "extraktor": "hpr_zeit",
+        "bereich": {"n": [30], "breite": [100], "typ": ["zufällig", "gruppiert"]},
+        "voraussetzung": "30 Instanzen, 30 Kunden, Breite 100, ng k = 8, 3 Wiederholungen, ein Prozess, Rechner durch andere Läufe ausgelastet (nur Größenordnung); CPU-Zeit als Summe der Instanz-Mediane im Verhältnis zum immer exakten Pricing",
+        "quelle": {"demo": "heuristisches-pricing-demo", "datei": "data/zeit_vormessung.json", "stelle": "zeilen[].cpu und exakt_cpu (Kopie von run_p14_zeit.log der Vormessung)"},
+        "readme": ["macht das exakte Pricing 96,2 % der CPU-Zeit bei immer exaktem Pricing aus", "eine CPU-Zeit von 0,36 / 0,39 / 0,46", "ein Master-LP nur etwa 380 Labels kostet"],
+    },
+    {
+        "id": "eml_v10", "k_gemessen": [5], "stueck": 12, "baustein": "Eimer im Labeling", "extraktor": "eml_v10",
+        "bereich": {"n": [30], "breite": [40, 100], "typ": ["zufällig", "gruppiert"]},
+        "voraussetzung": "30 Kunden, ng k = 5, Breite 40 und 100, zufällig und gruppiert, Kapazität 70 und 120, je 10 Instanzen, Dualpreise am Ende der Spaltenerzeugung (40 Läufe je Kapazität); Median des Verhältnisses der Dominanzvergleiche je Lauf; netto nach Verwaltung mit angenommenem Gewicht 0,1 je Eimerschritt",
+        "quelle": {"demo": "eimer-labeling-demo", "datei": "data/laeufe_v10.json", "stelle": "laeufe[] mit runde = ende: einstellungen[...]: Vergleiche cmp1 + cmp2 und Eimerschritte"},
+        "readme": ["also 6,8 bis 19,2 % weniger Vergleiche", "Im Median 26,9 % (Last 10, Kapazität 70) bis 30,9 % (Last 5, Kapazität 120) weniger Vergleiche", "also 3,0 bis 6,6 % gespart", "also rund 20 % gespart", "zwischen 0,86 und 1,10"],
+    },
+    {
+        "id": "crew_pairing", "stueck": None, "baustein": "Von der Schranke zur ganzen Lösung", "extraktor": None,
+        "werte": {
+            "luecke_3": 5.2, "luecke_4": 4.1, "luecke_5": 3.4, "max_3": 15.5, "max_4": 12.7, "max_5": 8.2,
+            "pricing_3": 64, "pricing_4": 73, "pricing_5": 76, "netze": 20, "gleich_lp_3": 6, "gleich_lp_4": 2, "gleich_lp_5": 0,
+        },
+        "bereich": {"n": None, "breite": None, "typ": None},
+        "voraussetzung": "Fall-Demo Besatzungsplanung im Zugverkehr, je 20 Netze (Seeds 100 bis 119) mit 3, 4 und 5 Zügen, Median bzw. Mittel wie in der Quelle; ganzzahlige Lösung gegen die LP-Schranke, Pricing als Anteil der Rechenzeit der Spaltengenerierung",
+        "quelle": {"demo": "crew-pairing-demo", "datei": "README.md", "stelle": "Tabelle „Befunde (gemessen, keine Behauptungen)“, Zeilen „Wie nah liegt die ganzzahlige Lösung an der Schranke?“ und „Wie lange rechnet die Spaltengenerierung?“"},
+        "readme": ["**5.2 % / 4.1 % / 3.4 %** über der LP-Schranke bei 3 / 4 / 5 Zügen (größte Lücke 15.5 / 12.7 / 8.2 %)", "ganzzahlig gleich LP in nur 6 / 2 / 0 von 20 Netzen", "davon Pricing 64 / 73 / 76 %", "Je 20 Netze (Seeds 100–119)"],
+    },
+    {
+        "id": "v15_gelernt", "stueck": None, "baustein": "Gelernte Dominanz", "extraktor": None,
+        "werte": {"genauigkeit_logreg": 91.9, "genauigkeit_gb": 92.4, "mehrheitsklasse": 91.4, "in_dominanzpruefung_gb": 73.2, "gestrichen_gb": 26.8, "zerstoerte_aufrufe_001": 0, "zerstoerte_aufrufe_005": 4, "aufrufe": 30, "testinstanzen": 5},
+        "k_gemessen": [8],
+        "bereich": {"n": [30], "breite": [100], "typ": None},
+        "voraussetzung": "Vormessung, nicht als Demo gebaut: 30 Kunden, Breite 100, ng k = 8 (andere Größen, Breiten und k nicht getestet), 20 Trainingsinstanzen (1,35 Millionen Labels), Test an 5 unbekannten Instanzen; Zielgröße „nützlich“ (Genauigkeit) bzw. „dominiert“ (Streichen vor der Dominanzprüfung, Gradient Boosting, Schwelle 0,01 bzw. 0,05, 30 Pricing-Aufrufe je Instanz); Spaltenerzeugung mit Modell nicht gerechnet",
+        "quelle": {"demo": "vormessung", "datei": "ERGEBNIS-v14-v15.md, out_v15_online_auswertung.txt", "stelle": "Zeile „Mindestmodell“ und Tabelle online"},
+        "readme": ["Genauigkeit 91,9 / 92,4 % (nützlich, logreg / gb) gegen 91,4 % Mehrheitsklasse"],
+        "readme_demo": "vormessung", "readme_datei": "ERGEBNIS-v14-v15.md",
+        "zusatz": [("vormessung", "out_v15_online_auswertung.txt", "| dominiert | gb | 0.01 | 0 | 0 | 73.2 | 91573 | – |"),
+                   ("vormessung", "out_v15_online_auswertung.txt", "| dominiert | gb | 0.05 | 4 | 3 | 55.6 | 147889 |")],
+    },
+]
+
+
+def _runden(werte: dict) -> dict:
+    return {k: (round(v, STELLEN) if isinstance(v, float) else v) for k, v in werte.items()}
+
+
+def zeile_werte(z: dict) -> dict:
+    """Die Werte einer Zeile aus der Quelle (Extraktor, ggf. nur Schlüssel mit Präfix) bzw. die fest eingetragenen."""
+    if z["extraktor"] is None:
+        return z["werte"]
+    roh = Q.EXTRAKTOREN[z["extraktor"]]()
+    pre = z.get("praefix")
+    if pre:
+        roh = {k[len(pre):]: v for k, v in roh.items() if k.startswith(pre)}
+    return _runden(roh)
+
+
+def bauen() -> tuple:
+    zeilen = []
+    for z in ZEILEN:
+        eintrag = {k: v for k, v in z.items() if k not in ("werte", "zusatz")}
+        eintrag["werte"] = zeile_werte(z)
+        zeilen.append(eintrag)
+    messwerte = {
+        "hinweis": "Kopie der Zahlen, die der Entscheidungsbaum nennt. Jede Zeile nennt Quelle und Voraussetzung; tests/test_quellen.py liest die Quellzeilen noch einmal aus den Dateien der Quell-Demos.",
+        "zeilen": zeilen,
+    }
+    zellen = Q.lese_v8_zellen() + Q.lese_n30_zellen()
+    k_zellen = {
+        "hinweis": "Zellen für die Auswahlregel des Gedächtnisses k: je Instanz und k die Schranke des Masters und die erzeugten Labels (ganze Spaltenerzeugung, Überdeckungs-Master); abgebrochene Läufe fehlen.",
+        "zellen": zellen,
+    }
+    return messwerte, k_zellen
+
+
+def dumps(obj) -> str:
+    return json.dumps(obj, ensure_ascii=False, indent=1) + "\n"
+
+
+def main(argv) -> int:
+    messwerte, k_zellen = bauen()
+    ziel = {"messwerte.json": dumps(messwerte), "k_zellen.json": dumps(k_zellen)}
+    if "--pruefen" in argv:
+        abweichend = [n for n, text in ziel.items() if not (DATA / n).exists() or (DATA / n).read_text(encoding="utf-8") != text]
+        print("abweichend:", abweichend or "keine")
+        return 1 if abweichend else 0
+    DATA.mkdir(exist_ok=True)
+    for name, text in ziel.items():
+        (DATA / name).write_text(text, encoding="utf-8", newline="\n")
+        print("geschrieben:", DATA / name, len(text), "Zeichen")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv[1:]))

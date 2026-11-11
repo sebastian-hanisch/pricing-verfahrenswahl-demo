@@ -1,0 +1,4783 @@
+{
+ "hinweis": "Zellen für die Auswahlregel des Gedächtnisses k: je Instanz und k die Schranke des Masters und die erzeugten Labels (ganze Spaltenerzeugung, Überdeckungs-Master); abgebrochene Läufe fehlen.",
+ "zellen": [
+  {
+   "id": "cluster_n100_b20",
+   "typ": "gruppiert",
+   "n": 100,
+   "breite": 20,
+   "bezug": 16,
+   "ks": [
+    1,
+    3,
+    5,
+    8,
+    12,
+    16
+   ],
+   "quelle": {
+    "demo": "vormessung",
+    "datei": "out_v8_cluster_n100_w20.txt",
+    "text": "Rohdatei V8, Spalten typ n breite seed k schranke ... labels ... abgebr; abgebrochene Läufe fehlen"
+   },
+   "zeilen": [
+    {
+     "seed": 0,
+     "k": 1,
+     "schranke": 1069.160832,
+     "labels": 2082772
+    },
+    {
+     "seed": 0,
+     "k": 3,
+     "schranke": 1069.160832,
+     "labels": 2680093
+    },
+    {
+     "seed": 0,
+     "k": 5,
+     "schranke": 1069.160832,
+     "labels": 2857892
+    },
+    {
+     "seed": 0,
+     "k": 8,
+     "schranke": 1069.160832,
+     "labels": 3380419
+    },
+    {
+     "seed": 0,
+     "k": 12,
+     "schranke": 1069.160832,
+     "labels": 4028790
+    },
+    {
+     "seed": 0,
+     "k": 16,
+     "schranke": 1069.160832,
+     "labels": 5241273
+    },
+    {
+     "seed": 1,
+     "k": 1,
+     "schranke": 1594.564358,
+     "labels": 1682130
+    },
+    {
+     "seed": 1,
+     "k": 3,
+     "schranke": 1594.564358,
+     "labels": 1480394
+    },
+    {
+     "seed": 1,
+     "k": 5,
+     "schranke": 1594.564358,
+     "labels": 2068598
+    },
+    {
+     "seed": 1,
+     "k": 8,
+     "schranke": 1594.564358,
+     "labels": 2369124
+    },
+    {
+     "seed": 1,
+     "k": 12,
+     "schranke": 1594.564358,
+     "labels": 2850264
+    },
+    {
+     "seed": 1,
+     "k": 16,
+     "schranke": 1594.564358,
+     "labels": 3900888
+    },
+    {
+     "seed": 2,
+     "k": 1,
+     "schranke": 1755.355607,
+     "labels": 1627612
+    },
+    {
+     "seed": 2,
+     "k": 3,
+     "schranke": 1755.355607,
+     "labels": 1657511
+    },
+    {
+     "seed": 2,
+     "k": 5,
+     "schranke": 1755.355607,
+     "labels": 1961053
+    },
+    {
+     "seed": 2,
+     "k": 8,
+     "schranke": 1755.355607,
+     "labels": 2245559
+    },
+    {
+     "seed": 2,
+     "k": 12,
+     "schranke": 1755.355607,
+     "labels": 3057858
+    },
+    {
+     "seed": 2,
+     "k": 16,
+     "schranke": 1755.355607,
+     "labels": 3983495
+    },
+    {
+     "seed": 3,
+     "k": 1,
+     "schranke": 1446.51427,
+     "labels": 1947299
+    },
+    {
+     "seed": 3,
+     "k": 3,
+     "schranke": 1446.51427,
+     "labels": 2190302
+    },
+    {
+     "seed": 3,
+     "k": 5,
+     "schranke": 1446.51427,
+     "labels": 2555293
+    },
+    {
+     "seed": 3,
+     "k": 8,
+     "schranke": 1446.51427,
+     "labels": 2986294
+    },
+    {
+     "seed": 3,
+     "k": 12,
+     "schranke": 1446.51427,
+     "labels": 3785438
+    },
+    {
+     "seed": 3,
+     "k": 16,
+     "schranke": 1446.51427,
+     "labels": 4681185
+    },
+    {
+     "seed": 4,
+     "k": 1,
+     "schranke": 1705.007488,
+     "labels": 1368493
+    },
+    {
+     "seed": 4,
+     "k": 3,
+     "schranke": 1705.007488,
+     "labels": 1486623
+    },
+    {
+     "seed": 4,
+     "k": 5,
+     "schranke": 1705.007488,
+     "labels": 1773421
+    },
+    {
+     "seed": 4,
+     "k": 8,
+     "schranke": 1705.007488,
+     "labels": 2358096
+    },
+    {
+     "seed": 4,
+     "k": 12,
+     "schranke": 1705.007488,
+     "labels": 2517696
+    },
+    {
+     "seed": 4,
+     "k": 16,
+     "schranke": 1705.007488,
+     "labels": 3214232
+    },
+    {
+     "seed": 5,
+     "k": 1,
+     "schranke": 1782.586654,
+     "labels": 2934333
+    },
+    {
+     "seed": 5,
+     "k": 3,
+     "schranke": 1782.586654,
+     "labels": 3265665
+    },
+    {
+     "seed": 5,
+     "k": 5,
+     "schranke": 1782.586654,
+     "labels": 3758032
+    },
+    {
+     "seed": 5,
+     "k": 8,
+     "schranke": 1782.586654,
+     "labels": 4360969
+    },
+    {
+     "seed": 5,
+     "k": 12,
+     "schranke": 1782.586654,
+     "labels": 5705353
+    },
+    {
+     "seed": 5,
+     "k": 16,
+     "schranke": 1782.586654,
+     "labels": 7439283
+    },
+    {
+     "seed": 6,
+     "k": 1,
+     "schranke": 1469.574975,
+     "labels": 1980285
+    },
+    {
+     "seed": 6,
+     "k": 3,
+     "schranke": 1469.574975,
+     "labels": 2409333
+    },
+    {
+     "seed": 6,
+     "k": 5,
+     "schranke": 1469.574975,
+     "labels": 2520684
+    },
+    {
+     "seed": 6,
+     "k": 8,
+     "schranke": 1469.574975,
+     "labels": 3273600
+    },
+    {
+     "seed": 6,
+     "k": 12,
+     "schranke": 1469.574975,
+     "labels": 3775384
+    },
+    {
+     "seed": 6,
+     "k": 16,
+     "schranke": 1469.574975,
+     "labels": 4699610
+    },
+    {
+     "seed": 7,
+     "k": 1,
+     "schranke": 1416.168252,
+     "labels": 2096639
+    },
+    {
+     "seed": 7,
+     "k": 3,
+     "schranke": 1416.168252,
+     "labels": 2364321
+    },
+    {
+     "seed": 7,
+     "k": 5,
+     "schranke": 1416.168252,
+     "labels": 2677472
+    },
+    {
+     "seed": 7,
+     "k": 8,
+     "schranke": 1416.168252,
+     "labels": 3177207
+    },
+    {
+     "seed": 7,
+     "k": 12,
+     "schranke": 1416.168252,
+     "labels": 4417040
+    },
+    {
+     "seed": 7,
+     "k": 16,
+     "schranke": 1416.168252,
+     "labels": 4995070
+    },
+    {
+     "seed": 8,
+     "k": 1,
+     "schranke": 1735.54453,
+     "labels": 1354648
+    },
+    {
+     "seed": 8,
+     "k": 3,
+     "schranke": 1735.54453,
+     "labels": 1743137
+    },
+    {
+     "seed": 8,
+     "k": 5,
+     "schranke": 1735.54453,
+     "labels": 1825702
+    },
+    {
+     "seed": 8,
+     "k": 8,
+     "schranke": 1735.54453,
+     "labels": 2211655
+    },
+    {
+     "seed": 8,
+     "k": 12,
+     "schranke": 1735.54453,
+     "labels": 2555103
+    },
+    {
+     "seed": 8,
+     "k": 16,
+     "schranke": 1735.54453,
+     "labels": 3069729
+    },
+    {
+     "seed": 9,
+     "k": 1,
+     "schranke": 1438.502405,
+     "labels": 1704771
+    },
+    {
+     "seed": 9,
+     "k": 3,
+     "schranke": 1438.502405,
+     "labels": 1928016
+    },
+    {
+     "seed": 9,
+     "k": 5,
+     "schranke": 1438.502405,
+     "labels": 2088141
+    },
+    {
+     "seed": 9,
+     "k": 8,
+     "schranke": 1438.502405,
+     "labels": 2701217
+    },
+    {
+     "seed": 9,
+     "k": 12,
+     "schranke": 1438.502405,
+     "labels": 3702081
+    },
+    {
+     "seed": 9,
+     "k": 16,
+     "schranke": 1438.502405,
+     "labels": 4337676
+    },
+    {
+     "seed": 10,
+     "k": 1,
+     "schranke": 1163.164678,
+     "labels": 2404237
+    },
+    {
+     "seed": 10,
+     "k": 3,
+     "schranke": 1163.164678,
+     "labels": 2985197
+    },
+    {
+     "seed": 10,
+     "k": 5,
+     "schranke": 1163.164678,
+     "labels": 3223621
+    },
+    {
+     "seed": 10,
+     "k": 8,
+     "schranke": 1163.164678,
+     "labels": 3856597
+    },
+    {
+     "seed": 10,
+     "k": 12,
+     "schranke": 1163.164678,
+     "labels": 4428629
+    },
+    {
+     "seed": 10,
+     "k": 16,
+     "schranke": 1163.164678,
+     "labels": 5627099
+    },
+    {
+     "seed": 11,
+     "k": 1,
+     "schranke": 1147.069388,
+     "labels": 1604755
+    },
+    {
+     "seed": 11,
+     "k": 3,
+     "schranke": 1147.069388,
+     "labels": 1745531
+    },
+    {
+     "seed": 11,
+     "k": 5,
+     "schranke": 1147.069388,
+     "labels": 1848825
+    },
+    {
+     "seed": 11,
+     "k": 8,
+     "schranke": 1147.069388,
+     "labels": 2249755
+    },
+    {
+     "seed": 11,
+     "k": 12,
+     "schranke": 1147.069388,
+     "labels": 2965704
+    },
+    {
+     "seed": 11,
+     "k": 16,
+     "schranke": 1147.069388,
+     "labels": 3856992
+    }
+   ]
+  },
+  {
+   "id": "cluster_n100_b40",
+   "typ": "gruppiert",
+   "n": 100,
+   "breite": 40,
+   "bezug": 16,
+   "ks": [
+    1,
+    3,
+    5,
+    8,
+    12,
+    16
+   ],
+   "quelle": {
+    "demo": "vormessung",
+    "datei": "out_v8_cluster_n100_w40.txt",
+    "text": "Rohdatei V8, Spalten typ n breite seed k schranke ... labels ... abgebr; abgebrochene Läufe fehlen"
+   },
+   "zeilen": [
+    {
+     "seed": 0,
+     "k": 1,
+     "schranke": 1032.271445,
+     "labels": 3164728
+    },
+    {
+     "seed": 0,
+     "k": 3,
+     "schranke": 1034.977853,
+     "labels": 3896757
+    },
+    {
+     "seed": 0,
+     "k": 5,
+     "schranke": 1035.390142,
+     "labels": 4435825
+    },
+    {
+     "seed": 0,
+     "k": 8,
+     "schranke": 1035.462068,
+     "labels": 5223457
+    },
+    {
+     "seed": 0,
+     "k": 12,
+     "schranke": 1035.462068,
+     "labels": 7167332
+    },
+    {
+     "seed": 0,
+     "k": 16,
+     "schranke": 1035.462068,
+     "labels": 9364253
+    },
+    {
+     "seed": 1,
+     "k": 1,
+     "schranke": 1527.559194,
+     "labels": 2867805
+    },
+    {
+     "seed": 1,
+     "k": 3,
+     "schranke": 1537.690312,
+     "labels": 3178059
+    },
+    {
+     "seed": 1,
+     "k": 5,
+     "schranke": 1538.33592,
+     "labels": 4124542
+    },
+    {
+     "seed": 1,
+     "k": 8,
+     "schranke": 1538.866449,
+     "labels": 4649547
+    },
+    {
+     "seed": 1,
+     "k": 12,
+     "schranke": 1538.866449,
+     "labels": 6095213
+    },
+    {
+     "seed": 1,
+     "k": 16,
+     "schranke": 1539.363203,
+     "labels": 8589533
+    },
+    {
+     "seed": 2,
+     "k": 1,
+     "schranke": 1719.975319,
+     "labels": 3351566
+    },
+    {
+     "seed": 2,
+     "k": 3,
+     "schranke": 1723.39266,
+     "labels": 3728695
+    },
+    {
+     "seed": 2,
+     "k": 5,
+     "schranke": 1725.717658,
+     "labels": 4416052
+    },
+    {
+     "seed": 2,
+     "k": 8,
+     "schranke": 1726.917201,
+     "labels": 4999576
+    },
+    {
+     "seed": 2,
+     "k": 12,
+     "schranke": 1726.93624,
+     "labels": 6859111
+    },
+    {
+     "seed": 2,
+     "k": 16,
+     "schranke": 1726.93624,
+     "labels": 7375738
+    },
+    {
+     "seed": 3,
+     "k": 1,
+     "schranke": 1414.280693,
+     "labels": 3451556
+    },
+    {
+     "seed": 3,
+     "k": 3,
+     "schranke": 1423.992287,
+     "labels": 3811847
+    },
+    {
+     "seed": 3,
+     "k": 5,
+     "schranke": 1424.048365,
+     "labels": 4754821
+    },
+    {
+     "seed": 3,
+     "k": 8,
+     "schranke": 1424.048365,
+     "labels": 5473881
+    },
+    {
+     "seed": 3,
+     "k": 12,
+     "schranke": 1424.048365,
+     "labels": 7675274
+    },
+    {
+     "seed": 3,
+     "k": 16,
+     "schranke": 1424.048365,
+     "labels": 9066482
+    },
+    {
+     "seed": 4,
+     "k": 1,
+     "schranke": 1658.165659,
+     "labels": 2441884
+    },
+    {
+     "seed": 4,
+     "k": 3,
+     "schranke": 1661.571588,
+     "labels": 3129265
+    },
+    {
+     "seed": 4,
+     "k": 5,
+     "schranke": 1667.674791,
+     "labels": 3511856
+    },
+    {
+     "seed": 4,
+     "k": 8,
+     "schranke": 1670.667135,
+     "labels": 4682376
+    },
+    {
+     "seed": 4,
+     "k": 12,
+     "schranke": 1670.667135,
+     "labels": 5686467
+    },
+    {
+     "seed": 4,
+     "k": 16,
+     "schranke": 1670.667135,
+     "labels": 6848988
+    },
+    {
+     "seed": 5,
+     "k": 1,
+     "schranke": 1734.703618,
+     "labels": 5528599
+    },
+    {
+     "seed": 5,
+     "k": 3,
+     "schranke": 1744.070979,
+     "labels": 6207440
+    },
+    {
+     "seed": 5,
+     "k": 5,
+     "schranke": 1751.159673,
+     "labels": 7539861
+    },
+    {
+     "seed": 5,
+     "k": 8,
+     "schranke": 1751.874094,
+     "labels": 9741307
+    },
+    {
+     "seed": 5,
+     "k": 12,
+     "schranke": 1751.874154,
+     "labels": 12805980
+    },
+    {
+     "seed": 5,
+     "k": 16,
+     "schranke": 1751.874154,
+     "labels": 15872990
+    },
+    {
+     "seed": 6,
+     "k": 1,
+     "schranke": 1424.226655,
+     "labels": 3830893
+    },
+    {
+     "seed": 6,
+     "k": 3,
+     "schranke": 1439.773328,
+     "labels": 4621873
+    },
+    {
+     "seed": 6,
+     "k": 5,
+     "schranke": 1440.818278,
+     "labels": 5367583
+    },
+    {
+     "seed": 6,
+     "k": 8,
+     "schranke": 1440.915262,
+     "labels": 6440307
+    },
+    {
+     "seed": 6,
+     "k": 12,
+     "schranke": 1440.962766,
+     "labels": 8018385
+    },
+    {
+     "seed": 6,
+     "k": 16,
+     "schranke": 1440.962766,
+     "labels": 10003770
+    },
+    {
+     "seed": 7,
+     "k": 1,
+     "schranke": 1377.320165,
+     "labels": 4158775
+    },
+    {
+     "seed": 7,
+     "k": 3,
+     "schranke": 1383.962381,
+     "labels": 4363076
+    },
+    {
+     "seed": 7,
+     "k": 5,
+     "schranke": 1386.617381,
+     "labels": 5698688
+    },
+    {
+     "seed": 7,
+     "k": 8,
+     "schranke": 1386.803196,
+     "labels": 6646668
+    },
+    {
+     "seed": 7,
+     "k": 12,
+     "schranke": 1386.803203,
+     "labels": 8542408
+    },
+    {
+     "seed": 7,
+     "k": 16,
+     "schranke": 1386.803203,
+     "labels": 10716253
+    },
+    {
+     "seed": 8,
+     "k": 1,
+     "schranke": 1694.682415,
+     "labels": 2330964
+    },
+    {
+     "seed": 8,
+     "k": 3,
+     "schranke": 1706.610863,
+     "labels": 3167726
+    },
+    {
+     "seed": 8,
+     "k": 5,
+     "schranke": 1706.77579,
+     "labels": 3544391
+    },
+    {
+     "seed": 8,
+     "k": 8,
+     "schranke": 1708.101561,
+     "labels": 4317690
+    },
+    {
+     "seed": 8,
+     "k": 12,
+     "schranke": 1708.56422,
+     "labels": 5259100
+    },
+    {
+     "seed": 8,
+     "k": 16,
+     "schranke": 1708.56422,
+     "labels": 7492041
+    },
+    {
+     "seed": 9,
+     "k": 1,
+     "schranke": 1383.457397,
+     "labels": 3109272
+    },
+    {
+     "seed": 9,
+     "k": 3,
+     "schranke": 1399.500209,
+     "labels": 3759456
+    },
+    {
+     "seed": 9,
+     "k": 5,
+     "schranke": 1402.849422,
+     "labels": 4176951
+    },
+    {
+     "seed": 9,
+     "k": 8,
+     "schranke": 1403.092234,
+     "labels": 5122820
+    },
+    {
+     "seed": 9,
+     "k": 12,
+     "schranke": 1403.174857,
+     "labels": 7390583
+    },
+    {
+     "seed": 9,
+     "k": 16,
+     "schranke": 1403.174857,
+     "labels": 10247821
+    },
+    {
+     "seed": 10,
+     "k": 1,
+     "schranke": 1127.883652,
+     "labels": 4527092
+    },
+    {
+     "seed": 10,
+     "k": 3,
+     "schranke": 1131.292149,
+     "labels": 5346929
+    },
+    {
+     "seed": 10,
+     "k": 5,
+     "schranke": 1131.785182,
+     "labels": 6438178
+    },
+    {
+     "seed": 10,
+     "k": 8,
+     "schranke": 1131.967753,
+     "labels": 7707142
+    },
+    {
+     "seed": 10,
+     "k": 12,
+     "schranke": 1131.967753,
+     "labels": 9378272
+    },
+    {
+     "seed": 10,
+     "k": 16,
+     "schranke": 1131.967753,
+     "labels": 11497274
+    },
+    {
+     "seed": 11,
+     "k": 1,
+     "schranke": 1114.95455,
+     "labels": 2865113
+    },
+    {
+     "seed": 11,
+     "k": 3,
+     "schranke": 1124.135199,
+     "labels": 3578234
+    },
+    {
+     "seed": 11,
+     "k": 5,
+     "schranke": 1124.261723,
+     "labels": 3731195
+    },
+    {
+     "seed": 11,
+     "k": 8,
+     "schranke": 1124.320263,
+     "labels": 3989186
+    },
+    {
+     "seed": 11,
+     "k": 12,
+     "schranke": 1124.323906,
+     "labels": 6017832
+    },
+    {
+     "seed": 11,
+     "k": 16,
+     "schranke": 1124.326346,
+     "labels": 7138911
+    }
+   ]
+  },
+  {
+   "id": "cluster_n50_b100",
+   "typ": "gruppiert",
+   "n": 50,
+   "breite": 100,
+   "bezug": 16,
+   "ks": [
+    1,
+    3,
+    5,
+    8,
+    12,
+    16
+   ],
+   "quelle": {
+    "demo": "vormessung",
+    "datei": "out_v8_cluster_n50_w100.txt",
+    "text": "Rohdatei V8, Spalten typ n breite seed k schranke ... labels ... abgebr; abgebrochene Läufe fehlen"
+   },
+   "zeilen": [
+    {
+     "seed": 0,
+     "k": 1,
+     "schranke": 587.687653,
+     "labels": 638138
+    },
+    {
+     "seed": 0,
+     "k": 3,
+     "schranke": 598.193487,
+     "labels": 980923
+    },
+    {
+     "seed": 0,
+     "k": 5,
+     "schranke": 599.217041,
+     "labels": 1109091
+    },
+    {
+     "seed": 0,
+     "k": 8,
+     "schranke": 599.277995,
+     "labels": 1425064
+    },
+    {
+     "seed": 0,
+     "k": 12,
+     "schranke": 599.277995,
+     "labels": 1958516
+    },
+    {
+     "seed": 0,
+     "k": 16,
+     "schranke": 599.277995,
+     "labels": 2414503
+    },
+    {
+     "seed": 1,
+     "k": 1,
+     "schranke": 762.535248,
+     "labels": 610154
+    },
+    {
+     "seed": 1,
+     "k": 3,
+     "schranke": 779.84414,
+     "labels": 912745
+    },
+    {
+     "seed": 1,
+     "k": 5,
+     "schranke": 780.68697,
+     "labels": 1107076
+    },
+    {
+     "seed": 1,
+     "k": 8,
+     "schranke": 781.765808,
+     "labels": 1341340
+    },
+    {
+     "seed": 1,
+     "k": 12,
+     "schranke": 781.765808,
+     "labels": 1675867
+    },
+    {
+     "seed": 1,
+     "k": 16,
+     "schranke": 781.765808,
+     "labels": 2108172
+    },
+    {
+     "seed": 2,
+     "k": 1,
+     "schranke": 763.741674,
+     "labels": 872918
+    },
+    {
+     "seed": 2,
+     "k": 3,
+     "schranke": 786.354466,
+     "labels": 1156353
+    },
+    {
+     "seed": 2,
+     "k": 5,
+     "schranke": 789.628351,
+     "labels": 1548824
+    },
+    {
+     "seed": 2,
+     "k": 8,
+     "schranke": 790.792843,
+     "labels": 2301461
+    },
+    {
+     "seed": 2,
+     "k": 12,
+     "schranke": 792.296745,
+     "labels": 3138055
+    },
+    {
+     "seed": 2,
+     "k": 16,
+     "schranke": 792.681831,
+     "labels": 4209952
+    },
+    {
+     "seed": 3,
+     "k": 1,
+     "schranke": 788.933263,
+     "labels": 656898
+    },
+    {
+     "seed": 3,
+     "k": 3,
+     "schranke": 812.378311,
+     "labels": 922166
+    },
+    {
+     "seed": 3,
+     "k": 5,
+     "schranke": 816.824198,
+     "labels": 1261900
+    },
+    {
+     "seed": 3,
+     "k": 8,
+     "schranke": 817.559165,
+     "labels": 1471553
+    },
+    {
+     "seed": 3,
+     "k": 12,
+     "schranke": 817.855583,
+     "labels": 2177992
+    },
+    {
+     "seed": 3,
+     "k": 16,
+     "schranke": 818.195271,
+     "labels": 2639352
+    },
+    {
+     "seed": 4,
+     "k": 1,
+     "schranke": 772.533061,
+     "labels": 885527
+    },
+    {
+     "seed": 4,
+     "k": 3,
+     "schranke": 788.60729,
+     "labels": 1016254
+    },
+    {
+     "seed": 4,
+     "k": 5,
+     "schranke": 791.117551,
+     "labels": 1328182
+    },
+    {
+     "seed": 4,
+     "k": 8,
+     "schranke": 796.320338,
+     "labels": 1719000
+    },
+    {
+     "seed": 4,
+     "k": 12,
+     "schranke": 796.421928,
+     "labels": 2029871
+    },
+    {
+     "seed": 4,
+     "k": 16,
+     "schranke": 796.421928,
+     "labels": 3208721
+    },
+    {
+     "seed": 5,
+     "k": 1,
+     "schranke": 996.476024,
+     "labels": 902088
+    },
+    {
+     "seed": 5,
+     "k": 3,
+     "schranke": 1002.628308,
+     "labels": 1304833
+    },
+    {
+     "seed": 5,
+     "k": 5,
+     "schranke": 1006.445796,
+     "labels": 1532929
+    },
+    {
+     "seed": 5,
+     "k": 8,
+     "schranke": 1009.86579,
+     "labels": 2020326
+    },
+    {
+     "seed": 5,
+     "k": 12,
+     "schranke": 1009.88544,
+     "labels": 2404187
+    },
+    {
+     "seed": 5,
+     "k": 16,
+     "schranke": 1009.88544,
+     "labels": 3016318
+    },
+    {
+     "seed": 6,
+     "k": 1,
+     "schranke": 801.024967,
+     "labels": 685554
+    },
+    {
+     "seed": 6,
+     "k": 3,
+     "schranke": 808.339841,
+     "labels": 935178
+    },
+    {
+     "seed": 6,
+     "k": 5,
+     "schranke": 808.987796,
+     "labels": 1002842
+    },
+    {
+     "seed": 6,
+     "k": 8,
+     "schranke": 809.358232,
+     "labels": 1376618
+    },
+    {
+     "seed": 6,
+     "k": 12,
+     "schranke": 810.412361,
+     "labels": 2399096
+    },
+    {
+     "seed": 6,
+     "k": 16,
+     "schranke": 810.412361,
+     "labels": 2409059
+    },
+    {
+     "seed": 7,
+     "k": 1,
+     "schranke": 753.388653,
+     "labels": 959555
+    },
+    {
+     "seed": 7,
+     "k": 3,
+     "schranke": 767.55969,
+     "labels": 1340278
+    },
+    {
+     "seed": 7,
+     "k": 5,
+     "schranke": 768.47789,
+     "labels": 1664139
+    },
+    {
+     "seed": 7,
+     "k": 8,
+     "schranke": 769.497544,
+     "labels": 2032151
+    },
+    {
+     "seed": 7,
+     "k": 12,
+     "schranke": 769.497544,
+     "labels": 3234160
+    },
+    {
+     "seed": 7,
+     "k": 16,
+     "schranke": 769.497544,
+     "labels": 4061709
+    },
+    {
+     "seed": 8,
+     "k": 1,
+     "schranke": 967.539759,
+     "labels": 447869
+    },
+    {
+     "seed": 8,
+     "k": 3,
+     "schranke": 993.310107,
+     "labels": 582487
+    },
+    {
+     "seed": 8,
+     "k": 5,
+     "schranke": 997.153501,
+     "labels": 855790
+    },
+    {
+     "seed": 8,
+     "k": 8,
+     "schranke": 997.153501,
+     "labels": 932267
+    },
+    {
+     "seed": 8,
+     "k": 12,
+     "schranke": 997.356167,
+     "labels": 1345499
+    },
+    {
+     "seed": 8,
+     "k": 16,
+     "schranke": 999.161112,
+     "labels": 1782556
+    },
+    {
+     "seed": 9,
+     "k": 1,
+     "schranke": 746.161952,
+     "labels": 593007
+    },
+    {
+     "seed": 9,
+     "k": 3,
+     "schranke": 766.178808,
+     "labels": 929737
+    },
+    {
+     "seed": 9,
+     "k": 5,
+     "schranke": 768.499514,
+     "labels": 1099749
+    },
+    {
+     "seed": 9,
+     "k": 8,
+     "schranke": 769.056417,
+     "labels": 1514431
+    },
+    {
+     "seed": 9,
+     "k": 12,
+     "schranke": 769.056417,
+     "labels": 1867182
+    },
+    {
+     "seed": 9,
+     "k": 16,
+     "schranke": 769.056417,
+     "labels": 2819603
+    },
+    {
+     "seed": 10,
+     "k": 1,
+     "schranke": 646.233446,
+     "labels": 552570
+    },
+    {
+     "seed": 10,
+     "k": 3,
+     "schranke": 661.469845,
+     "labels": 804531
+    },
+    {
+     "seed": 10,
+     "k": 5,
+     "schranke": 662.274565,
+     "labels": 1006677
+    },
+    {
+     "seed": 10,
+     "k": 8,
+     "schranke": 663.906189,
+     "labels": 1375252
+    },
+    {
+     "seed": 10,
+     "k": 12,
+     "schranke": 663.906189,
+     "labels": 1920642
+    },
+    {
+     "seed": 10,
+     "k": 16,
+     "schranke": 664.63384,
+     "labels": 2351715
+    },
+    {
+     "seed": 11,
+     "k": 1,
+     "schranke": 596.016723,
+     "labels": 1123022
+    },
+    {
+     "seed": 11,
+     "k": 3,
+     "schranke": 606.022359,
+     "labels": 1632363
+    },
+    {
+     "seed": 11,
+     "k": 5,
+     "schranke": 607.152326,
+     "labels": 1573113
+    },
+    {
+     "seed": 11,
+     "k": 8,
+     "schranke": 608.75861,
+     "labels": 2484575
+    },
+    {
+     "seed": 11,
+     "k": 12,
+     "schranke": 608.872151,
+     "labels": 3274964
+    },
+    {
+     "seed": 11,
+     "k": 16,
+     "schranke": 608.872151,
+     "labels": 4577048
+    }
+   ]
+  },
+  {
+   "id": "cluster_n50_b40",
+   "typ": "gruppiert",
+   "n": 50,
+   "breite": 40,
+   "bezug": 16,
+   "ks": [
+    1,
+    3,
+    5,
+    8,
+    12,
+    16
+   ],
+   "quelle": {
+    "demo": "vormessung",
+    "datei": "out_v8_cluster_n50_w40.txt",
+    "text": "Rohdatei V8, Spalten typ n breite seed k schranke ... labels ... abgebr; abgebrochene Läufe fehlen"
+   },
+   "zeilen": [
+    {
+     "seed": 0,
+     "k": 1,
+     "schranke": 632.003105,
+     "labels": 254068
+    },
+    {
+     "seed": 0,
+     "k": 3,
+     "schranke": 632.520163,
+     "labels": 299872
+    },
+    {
+     "seed": 0,
+     "k": 5,
+     "schranke": 632.547623,
+     "labels": 361958
+    },
+    {
+     "seed": 0,
+     "k": 8,
+     "schranke": 632.547623,
+     "labels": 386748
+    },
+    {
+     "seed": 0,
+     "k": 12,
+     "schranke": 632.547623,
+     "labels": 530805
+    },
+    {
+     "seed": 0,
+     "k": 16,
+     "schranke": 632.547623,
+     "labels": 683702
+    },
+    {
+     "seed": 1,
+     "k": 1,
+     "schranke": 809.171424,
+     "labels": 184366
+    },
+    {
+     "seed": 1,
+     "k": 3,
+     "schranke": 818.120004,
+     "labels": 231141
+    },
+    {
+     "seed": 1,
+     "k": 5,
+     "schranke": 818.1946,
+     "labels": 310968
+    },
+    {
+     "seed": 1,
+     "k": 8,
+     "schranke": 819.332537,
+     "labels": 363741
+    },
+    {
+     "seed": 1,
+     "k": 12,
+     "schranke": 819.332537,
+     "labels": 504113
+    },
+    {
+     "seed": 1,
+     "k": 16,
+     "schranke": 819.332537,
+     "labels": 509378
+    },
+    {
+     "seed": 2,
+     "k": 1,
+     "schranke": 828.883152,
+     "labels": 318062
+    },
+    {
+     "seed": 2,
+     "k": 3,
+     "schranke": 832.063645,
+     "labels": 375816
+    },
+    {
+     "seed": 2,
+     "k": 5,
+     "schranke": 832.175459,
+     "labels": 442232
+    },
+    {
+     "seed": 2,
+     "k": 8,
+     "schranke": 832.831464,
+     "labels": 547278
+    },
+    {
+     "seed": 2,
+     "k": 12,
+     "schranke": 833.253806,
+     "labels": 786516
+    },
+    {
+     "seed": 2,
+     "k": 16,
+     "schranke": 833.253806,
+     "labels": 999041
+    },
+    {
+     "seed": 3,
+     "k": 1,
+     "schranke": 823.902433,
+     "labels": 184231
+    },
+    {
+     "seed": 3,
+     "k": 3,
+     "schranke": 843.884016,
+     "labels": 269177
+    },
+    {
+     "seed": 3,
+     "k": 5,
+     "schranke": 843.955689,
+     "labels": 289503
+    },
+    {
+     "seed": 3,
+     "k": 8,
+     "schranke": 843.955689,
+     "labels": 396342
+    },
+    {
+     "seed": 3,
+     "k": 12,
+     "schranke": 843.974702,
+     "labels": 454020
+    },
+    {
+     "seed": 3,
+     "k": 16,
+     "schranke": 843.974702,
+     "labels": 574823
+    },
+    {
+     "seed": 4,
+     "k": 1,
+     "schranke": 824.200101,
+     "labels": 230659
+    },
+    {
+     "seed": 4,
+     "k": 3,
+     "schranke": 828.649186,
+     "labels": 319386
+    },
+    {
+     "seed": 4,
+     "k": 5,
+     "schranke": 831.602774,
+     "labels": 342387
+    },
+    {
+     "seed": 4,
+     "k": 8,
+     "schranke": 831.602774,
+     "labels": 420857
+    },
+    {
+     "seed": 4,
+     "k": 12,
+     "schranke": 831.723663,
+     "labels": 505596
+    },
+    {
+     "seed": 4,
+     "k": 16,
+     "schranke": 831.723663,
+     "labels": 630004
+    },
+    {
+     "seed": 5,
+     "k": 1,
+     "schranke": 1021.576372,
+     "labels": 321412
+    },
+    {
+     "seed": 5,
+     "k": 3,
+     "schranke": 1023.82814,
+     "labels": 406347
+    },
+    {
+     "seed": 5,
+     "k": 5,
+     "schranke": 1024.521668,
+     "labels": 476413
+    },
+    {
+     "seed": 5,
+     "k": 8,
+     "schranke": 1024.521668,
+     "labels": 485871
+    },
+    {
+     "seed": 5,
+     "k": 12,
+     "schranke": 1024.521668,
+     "labels": 604150
+    },
+    {
+     "seed": 5,
+     "k": 16,
+     "schranke": 1025.384133,
+     "labels": 759641
+    },
+    {
+     "seed": 6,
+     "k": 1,
+     "schranke": 824.63862,
+     "labels": 215202
+    },
+    {
+     "seed": 6,
+     "k": 3,
+     "schranke": 828.998691,
+     "labels": 256921
+    },
+    {
+     "seed": 6,
+     "k": 5,
+     "schranke": 829.559932,
+     "labels": 272207
+    },
+    {
+     "seed": 6,
+     "k": 8,
+     "schranke": 829.559932,
+     "labels": 345987
+    },
+    {
+     "seed": 6,
+     "k": 12,
+     "schranke": 829.559932,
+     "labels": 446448
+    },
+    {
+     "seed": 6,
+     "k": 16,
+     "schranke": 829.559932,
+     "labels": 576689
+    },
+    {
+     "seed": 7,
+     "k": 1,
+     "schranke": 786.739553,
+     "labels": 340603
+    },
+    {
+     "seed": 7,
+     "k": 3,
+     "schranke": 792.386204,
+     "labels": 388375
+    },
+    {
+     "seed": 7,
+     "k": 5,
+     "schranke": 792.386204,
+     "labels": 450853
+    },
+    {
+     "seed": 7,
+     "k": 8,
+     "schranke": 793.460699,
+     "labels": 554751
+    },
+    {
+     "seed": 7,
+     "k": 12,
+     "schranke": 793.460699,
+     "labels": 685692
+    },
+    {
+     "seed": 7,
+     "k": 16,
+     "schranke": 793.460699,
+     "labels": 856127
+    },
+    {
+     "seed": 8,
+     "k": 1,
+     "schranke": 1020.3532,
+     "labels": 163503
+    },
+    {
+     "seed": 8,
+     "k": 3,
+     "schranke": 1024.952687,
+     "labels": 256807
+    },
+    {
+     "seed": 8,
+     "k": 5,
+     "schranke": 1024.952687,
+     "labels": 270444
+    },
+    {
+     "seed": 8,
+     "k": 8,
+     "schranke": 1025.181121,
+     "labels": 467999
+    },
+    {
+     "seed": 8,
+     "k": 12,
+     "schranke": 1025.181121,
+     "labels": 486999
+    },
+    {
+     "seed": 8,
+     "k": 16,
+     "schranke": 1025.181121,
+     "labels": 567608
+    },
+    {
+     "seed": 9,
+     "k": 1,
+     "schranke": 809.594767,
+     "labels": 190687
+    },
+    {
+     "seed": 9,
+     "k": 3,
+     "schranke": 813.447914,
+     "labels": 238506
+    },
+    {
+     "seed": 9,
+     "k": 5,
+     "schranke": 814.56158,
+     "labels": 300000
+    },
+    {
+     "seed": 9,
+     "k": 8,
+     "schranke": 814.609275,
+     "labels": 337929
+    },
+    {
+     "seed": 9,
+     "k": 12,
+     "schranke": 814.609275,
+     "labels": 476326
+    },
+    {
+     "seed": 9,
+     "k": 16,
+     "schranke": 814.609275,
+     "labels": 573281
+    },
+    {
+     "seed": 10,
+     "k": 1,
+     "schranke": 681.293639,
+     "labels": 240030
+    },
+    {
+     "seed": 10,
+     "k": 3,
+     "schranke": 684.948914,
+     "labels": 287439
+    },
+    {
+     "seed": 10,
+     "k": 5,
+     "schranke": 688.117756,
+     "labels": 325324
+    },
+    {
+     "seed": 10,
+     "k": 8,
+     "schranke": 688.120392,
+     "labels": 373020
+    },
+    {
+     "seed": 10,
+     "k": 12,
+     "schranke": 688.120392,
+     "labels": 538870
+    },
+    {
+     "seed": 10,
+     "k": 16,
+     "schranke": 688.120392,
+     "labels": 604953
+    },
+    {
+     "seed": 11,
+     "k": 1,
+     "schranke": 638.065892,
+     "labels": 366415
+    },
+    {
+     "seed": 11,
+     "k": 3,
+     "schranke": 643.899893,
+     "labels": 434577
+    },
+    {
+     "seed": 11,
+     "k": 5,
+     "schranke": 645.18332,
+     "labels": 479942
+    },
+    {
+     "seed": 11,
+     "k": 8,
+     "schranke": 645.26351,
+     "labels": 570606
+    },
+    {
+     "seed": 11,
+     "k": 12,
+     "schranke": 645.26351,
+     "labels": 807661
+    },
+    {
+     "seed": 11,
+     "k": 16,
+     "schranke": 645.26351,
+     "labels": 1137955
+    }
+   ]
+  },
+  {
+   "id": "zufall_n100_b20",
+   "typ": "zufällig",
+   "n": 100,
+   "breite": 20,
+   "bezug": 16,
+   "ks": [
+    1,
+    3,
+    5,
+    8,
+    12,
+    16
+   ],
+   "quelle": {
+    "demo": "vormessung",
+    "datei": "out_v8_zufall_n100_w20.txt",
+    "text": "Rohdatei V8, Spalten typ n breite seed k schranke ... labels ... abgebr; abgebrochene Läufe fehlen"
+   },
+   "zeilen": [
+    {
+     "seed": 0,
+     "k": 1,
+     "schranke": 2340.616385,
+     "labels": 892055
+    },
+    {
+     "seed": 0,
+     "k": 3,
+     "schranke": 2340.616385,
+     "labels": 1032037
+    },
+    {
+     "seed": 0,
+     "k": 5,
+     "schranke": 2340.616385,
+     "labels": 1172918
+    },
+    {
+     "seed": 0,
+     "k": 8,
+     "schranke": 2340.616385,
+     "labels": 1411521
+    },
+    {
+     "seed": 0,
+     "k": 12,
+     "schranke": 2340.616385,
+     "labels": 1633214
+    },
+    {
+     "seed": 0,
+     "k": 16,
+     "schranke": 2340.616385,
+     "labels": 1919273
+    },
+    {
+     "seed": 1,
+     "k": 1,
+     "schranke": 2328.318526,
+     "labels": 954478
+    },
+    {
+     "seed": 1,
+     "k": 3,
+     "schranke": 2328.318526,
+     "labels": 1007025
+    },
+    {
+     "seed": 1,
+     "k": 5,
+     "schranke": 2328.318526,
+     "labels": 1088204
+    },
+    {
+     "seed": 1,
+     "k": 8,
+     "schranke": 2328.318526,
+     "labels": 1405129
+    },
+    {
+     "seed": 1,
+     "k": 12,
+     "schranke": 2328.318526,
+     "labels": 1748282
+    },
+    {
+     "seed": 1,
+     "k": 16,
+     "schranke": 2328.318526,
+     "labels": 2070714
+    },
+    {
+     "seed": 2,
+     "k": 1,
+     "schranke": 2419.643846,
+     "labels": 681089
+    },
+    {
+     "seed": 2,
+     "k": 3,
+     "schranke": 2419.643846,
+     "labels": 768723
+    },
+    {
+     "seed": 2,
+     "k": 5,
+     "schranke": 2419.643846,
+     "labels": 787660
+    },
+    {
+     "seed": 2,
+     "k": 8,
+     "schranke": 2419.643846,
+     "labels": 902470
+    },
+    {
+     "seed": 2,
+     "k": 12,
+     "schranke": 2419.643846,
+     "labels": 1134689
+    },
+    {
+     "seed": 2,
+     "k": 16,
+     "schranke": 2419.643846,
+     "labels": 1402810
+    },
+    {
+     "seed": 3,
+     "k": 1,
+     "schranke": 2281.044213,
+     "labels": 900470
+    },
+    {
+     "seed": 3,
+     "k": 3,
+     "schranke": 2281.044213,
+     "labels": 960678
+    },
+    {
+     "seed": 3,
+     "k": 5,
+     "schranke": 2281.044213,
+     "labels": 1169249
+    },
+    {
+     "seed": 3,
+     "k": 8,
+     "schranke": 2281.044213,
+     "labels": 1518829
+    },
+    {
+     "seed": 3,
+     "k": 12,
+     "schranke": 2281.044213,
+     "labels": 1638983
+    },
+    {
+     "seed": 3,
+     "k": 16,
+     "schranke": 2281.044213,
+     "labels": 2044433
+    },
+    {
+     "seed": 4,
+     "k": 1,
+     "schranke": 2559.74565,
+     "labels": 583860
+    },
+    {
+     "seed": 4,
+     "k": 3,
+     "schranke": 2559.74565,
+     "labels": 679906
+    },
+    {
+     "seed": 4,
+     "k": 5,
+     "schranke": 2559.74565,
+     "labels": 782029
+    },
+    {
+     "seed": 4,
+     "k": 8,
+     "schranke": 2559.74565,
+     "labels": 880965
+    },
+    {
+     "seed": 4,
+     "k": 12,
+     "schranke": 2559.74565,
+     "labels": 1091283
+    },
+    {
+     "seed": 4,
+     "k": 16,
+     "schranke": 2559.74565,
+     "labels": 1274241
+    },
+    {
+     "seed": 5,
+     "k": 1,
+     "schranke": 2523.90625,
+     "labels": 598874
+    },
+    {
+     "seed": 5,
+     "k": 3,
+     "schranke": 2523.90625,
+     "labels": 771684
+    },
+    {
+     "seed": 5,
+     "k": 5,
+     "schranke": 2523.90625,
+     "labels": 755410
+    },
+    {
+     "seed": 5,
+     "k": 8,
+     "schranke": 2523.90625,
+     "labels": 930963
+    },
+    {
+     "seed": 5,
+     "k": 12,
+     "schranke": 2523.90625,
+     "labels": 1158958
+    },
+    {
+     "seed": 5,
+     "k": 16,
+     "schranke": 2523.90625,
+     "labels": 1350916
+    },
+    {
+     "seed": 6,
+     "k": 1,
+     "schranke": 2410.405186,
+     "labels": 852678
+    },
+    {
+     "seed": 6,
+     "k": 3,
+     "schranke": 2410.405186,
+     "labels": 1004919
+    },
+    {
+     "seed": 6,
+     "k": 5,
+     "schranke": 2410.405186,
+     "labels": 1054292
+    },
+    {
+     "seed": 6,
+     "k": 8,
+     "schranke": 2410.405186,
+     "labels": 1242112
+    },
+    {
+     "seed": 6,
+     "k": 12,
+     "schranke": 2410.405186,
+     "labels": 1513698
+    },
+    {
+     "seed": 6,
+     "k": 16,
+     "schranke": 2410.405186,
+     "labels": 1661662
+    },
+    {
+     "seed": 7,
+     "k": 1,
+     "schranke": 2486.48205,
+     "labels": 846146
+    },
+    {
+     "seed": 7,
+     "k": 3,
+     "schranke": 2486.48205,
+     "labels": 970971
+    },
+    {
+     "seed": 7,
+     "k": 5,
+     "schranke": 2486.48205,
+     "labels": 1023904
+    },
+    {
+     "seed": 7,
+     "k": 8,
+     "schranke": 2486.48205,
+     "labels": 1045541
+    },
+    {
+     "seed": 7,
+     "k": 12,
+     "schranke": 2486.48205,
+     "labels": 1401934
+    },
+    {
+     "seed": 7,
+     "k": 16,
+     "schranke": 2486.48205,
+     "labels": 1780323
+    },
+    {
+     "seed": 8,
+     "k": 1,
+     "schranke": 2315.283466,
+     "labels": 801539
+    },
+    {
+     "seed": 8,
+     "k": 3,
+     "schranke": 2315.283466,
+     "labels": 876336
+    },
+    {
+     "seed": 8,
+     "k": 5,
+     "schranke": 2315.283466,
+     "labels": 1060599
+    },
+    {
+     "seed": 8,
+     "k": 8,
+     "schranke": 2315.283466,
+     "labels": 1134137
+    },
+    {
+     "seed": 8,
+     "k": 12,
+     "schranke": 2315.283466,
+     "labels": 1459448
+    },
+    {
+     "seed": 8,
+     "k": 16,
+     "schranke": 2315.283466,
+     "labels": 1544146
+    },
+    {
+     "seed": 9,
+     "k": 1,
+     "schranke": 2290.041667,
+     "labels": 834645
+    },
+    {
+     "seed": 9,
+     "k": 3,
+     "schranke": 2290.041667,
+     "labels": 866508
+    },
+    {
+     "seed": 9,
+     "k": 5,
+     "schranke": 2290.041667,
+     "labels": 1005518
+    },
+    {
+     "seed": 9,
+     "k": 8,
+     "schranke": 2290.041667,
+     "labels": 1151594
+    },
+    {
+     "seed": 9,
+     "k": 12,
+     "schranke": 2290.041667,
+     "labels": 1493319
+    },
+    {
+     "seed": 9,
+     "k": 16,
+     "schranke": 2290.041667,
+     "labels": 1704822
+    },
+    {
+     "seed": 10,
+     "k": 1,
+     "schranke": 2368.090107,
+     "labels": 1006908
+    },
+    {
+     "seed": 10,
+     "k": 3,
+     "schranke": 2368.090107,
+     "labels": 1199491
+    },
+    {
+     "seed": 10,
+     "k": 5,
+     "schranke": 2368.090107,
+     "labels": 1225324
+    },
+    {
+     "seed": 10,
+     "k": 8,
+     "schranke": 2368.090107,
+     "labels": 1330117
+    },
+    {
+     "seed": 10,
+     "k": 12,
+     "schranke": 2368.090107,
+     "labels": 1521340
+    },
+    {
+     "seed": 10,
+     "k": 16,
+     "schranke": 2368.090107,
+     "labels": 2222511
+    },
+    {
+     "seed": 11,
+     "k": 1,
+     "schranke": 2510.161988,
+     "labels": 543053
+    },
+    {
+     "seed": 11,
+     "k": 3,
+     "schranke": 2510.161988,
+     "labels": 603919
+    },
+    {
+     "seed": 11,
+     "k": 5,
+     "schranke": 2510.161988,
+     "labels": 774151
+    },
+    {
+     "seed": 11,
+     "k": 8,
+     "schranke": 2510.161988,
+     "labels": 823074
+    },
+    {
+     "seed": 11,
+     "k": 12,
+     "schranke": 2510.161988,
+     "labels": 975681
+    },
+    {
+     "seed": 11,
+     "k": 16,
+     "schranke": 2510.161988,
+     "labels": 1047939
+    }
+   ]
+  },
+  {
+   "id": "zufall_n100_b40",
+   "typ": "zufällig",
+   "n": 100,
+   "breite": 40,
+   "bezug": 16,
+   "ks": [
+    1,
+    3,
+    5,
+    8,
+    12,
+    16
+   ],
+   "quelle": {
+    "demo": "vormessung",
+    "datei": "out_v8_zufall_n100_w40.txt",
+    "text": "Rohdatei V8, Spalten typ n breite seed k schranke ... labels ... abgebr; abgebrochene Läufe fehlen"
+   },
+   "zeilen": [
+    {
+     "seed": 0,
+     "k": 1,
+     "schranke": 2211.182484,
+     "labels": 1731576
+    },
+    {
+     "seed": 0,
+     "k": 3,
+     "schranke": 2240.089676,
+     "labels": 2221945
+    },
+    {
+     "seed": 0,
+     "k": 5,
+     "schranke": 2245.484325,
+     "labels": 2835320
+    },
+    {
+     "seed": 0,
+     "k": 8,
+     "schranke": 2245.484325,
+     "labels": 3524484
+    },
+    {
+     "seed": 0,
+     "k": 12,
+     "schranke": 2245.484325,
+     "labels": 3708734
+    },
+    {
+     "seed": 0,
+     "k": 16,
+     "schranke": 2245.484325,
+     "labels": 5235545
+    },
+    {
+     "seed": 1,
+     "k": 1,
+     "schranke": 2230.7483,
+     "labels": 1707341
+    },
+    {
+     "seed": 1,
+     "k": 3,
+     "schranke": 2249.696058,
+     "labels": 2114391
+    },
+    {
+     "seed": 1,
+     "k": 5,
+     "schranke": 2250.06989,
+     "labels": 2313066
+    },
+    {
+     "seed": 1,
+     "k": 8,
+     "schranke": 2250.06989,
+     "labels": 2811630
+    },
+    {
+     "seed": 1,
+     "k": 12,
+     "schranke": 2250.06989,
+     "labels": 4150557
+    },
+    {
+     "seed": 1,
+     "k": 16,
+     "schranke": 2250.06989,
+     "labels": 5018235
+    },
+    {
+     "seed": 2,
+     "k": 1,
+     "schranke": 2280.121767,
+     "labels": 1252521
+    },
+    {
+     "seed": 2,
+     "k": 3,
+     "schranke": 2295.022746,
+     "labels": 1445283
+    },
+    {
+     "seed": 2,
+     "k": 5,
+     "schranke": 2297.032613,
+     "labels": 1845142
+    },
+    {
+     "seed": 2,
+     "k": 8,
+     "schranke": 2297.032613,
+     "labels": 2142520
+    },
+    {
+     "seed": 2,
+     "k": 12,
+     "schranke": 2297.032613,
+     "labels": 2682500
+    },
+    {
+     "seed": 2,
+     "k": 16,
+     "schranke": 2297.032613,
+     "labels": 3158847
+    },
+    {
+     "seed": 3,
+     "k": 1,
+     "schranke": 2162.594827,
+     "labels": 1810370
+    },
+    {
+     "seed": 3,
+     "k": 3,
+     "schranke": 2184.055733,
+     "labels": 2140275
+    },
+    {
+     "seed": 3,
+     "k": 5,
+     "schranke": 2188.758887,
+     "labels": 2452018
+    },
+    {
+     "seed": 3,
+     "k": 8,
+     "schranke": 2188.822487,
+     "labels": 3289654
+    },
+    {
+     "seed": 3,
+     "k": 12,
+     "schranke": 2188.822487,
+     "labels": 4749293
+    },
+    {
+     "seed": 3,
+     "k": 16,
+     "schranke": 2188.822487,
+     "labels": 5066886
+    },
+    {
+     "seed": 4,
+     "k": 1,
+     "schranke": 2467.070143,
+     "labels": 1259185
+    },
+    {
+     "seed": 4,
+     "k": 3,
+     "schranke": 2482.239538,
+     "labels": 1531752
+    },
+    {
+     "seed": 4,
+     "k": 5,
+     "schranke": 2483.00503,
+     "labels": 1597984
+    },
+    {
+     "seed": 4,
+     "k": 8,
+     "schranke": 2483.00503,
+     "labels": 2030501
+    },
+    {
+     "seed": 4,
+     "k": 12,
+     "schranke": 2483.00503,
+     "labels": 2931201
+    },
+    {
+     "seed": 4,
+     "k": 16,
+     "schranke": 2483.00503,
+     "labels": 3537151
+    },
+    {
+     "seed": 5,
+     "k": 1,
+     "schranke": 2418.550586,
+     "labels": 1142221
+    },
+    {
+     "seed": 5,
+     "k": 3,
+     "schranke": 2432.001928,
+     "labels": 1434164
+    },
+    {
+     "seed": 5,
+     "k": 5,
+     "schranke": 2432.971803,
+     "labels": 1582994
+    },
+    {
+     "seed": 5,
+     "k": 8,
+     "schranke": 2432.971803,
+     "labels": 2158452
+    },
+    {
+     "seed": 5,
+     "k": 12,
+     "schranke": 2432.971803,
+     "labels": 2813899
+    },
+    {
+     "seed": 5,
+     "k": 16,
+     "schranke": 2432.971803,
+     "labels": 3008709
+    },
+    {
+     "seed": 6,
+     "k": 1,
+     "schranke": 2274.482314,
+     "labels": 1780096
+    },
+    {
+     "seed": 6,
+     "k": 3,
+     "schranke": 2293.570201,
+     "labels": 2030156
+    },
+    {
+     "seed": 6,
+     "k": 5,
+     "schranke": 2294.539327,
+     "labels": 2624674
+    },
+    {
+     "seed": 6,
+     "k": 8,
+     "schranke": 2294.539327,
+     "labels": 3136010
+    },
+    {
+     "seed": 6,
+     "k": 12,
+     "schranke": 2294.539327,
+     "labels": 3583951
+    },
+    {
+     "seed": 6,
+     "k": 16,
+     "schranke": 2294.539327,
+     "labels": 4300060
+    },
+    {
+     "seed": 7,
+     "k": 1,
+     "schranke": 2373.992218,
+     "labels": 1555419
+    },
+    {
+     "seed": 7,
+     "k": 3,
+     "schranke": 2392.82195,
+     "labels": 1873903
+    },
+    {
+     "seed": 7,
+     "k": 5,
+     "schranke": 2392.82195,
+     "labels": 1978910
+    },
+    {
+     "seed": 7,
+     "k": 8,
+     "schranke": 2392.82195,
+     "labels": 2373735
+    },
+    {
+     "seed": 7,
+     "k": 12,
+     "schranke": 2392.82195,
+     "labels": 3306300
+    },
+    {
+     "seed": 7,
+     "k": 16,
+     "schranke": 2392.82195,
+     "labels": 3797483
+    },
+    {
+     "seed": 8,
+     "k": 1,
+     "schranke": 2189.416451,
+     "labels": 1788851
+    },
+    {
+     "seed": 8,
+     "k": 3,
+     "schranke": 2207.261684,
+     "labels": 2284029
+    },
+    {
+     "seed": 8,
+     "k": 5,
+     "schranke": 2212.479158,
+     "labels": 2847515
+    },
+    {
+     "seed": 8,
+     "k": 8,
+     "schranke": 2212.479158,
+     "labels": 3143116
+    },
+    {
+     "seed": 8,
+     "k": 12,
+     "schranke": 2212.479158,
+     "labels": 4336004
+    },
+    {
+     "seed": 8,
+     "k": 16,
+     "schranke": 2212.479158,
+     "labels": 4960102
+    },
+    {
+     "seed": 9,
+     "k": 1,
+     "schranke": 2198.441146,
+     "labels": 1620176
+    },
+    {
+     "seed": 9,
+     "k": 3,
+     "schranke": 2205.201596,
+     "labels": 1839141
+    },
+    {
+     "seed": 9,
+     "k": 5,
+     "schranke": 2209.51539,
+     "labels": 2249822
+    },
+    {
+     "seed": 9,
+     "k": 8,
+     "schranke": 2209.963237,
+     "labels": 3032075
+    },
+    {
+     "seed": 9,
+     "k": 12,
+     "schranke": 2209.963237,
+     "labels": 3423042
+    },
+    {
+     "seed": 9,
+     "k": 16,
+     "schranke": 2209.963237,
+     "labels": 4459755
+    },
+    {
+     "seed": 10,
+     "k": 1,
+     "schranke": 2249.287067,
+     "labels": 1782917
+    },
+    {
+     "seed": 10,
+     "k": 3,
+     "schranke": 2263.83719,
+     "labels": 1940169
+    },
+    {
+     "seed": 10,
+     "k": 5,
+     "schranke": 2265.246947,
+     "labels": 2366637
+    },
+    {
+     "seed": 10,
+     "k": 8,
+     "schranke": 2265.246947,
+     "labels": 3046359
+    },
+    {
+     "seed": 10,
+     "k": 12,
+     "schranke": 2265.246947,
+     "labels": 3652605
+    },
+    {
+     "seed": 10,
+     "k": 16,
+     "schranke": 2265.246947,
+     "labels": 4501885
+    },
+    {
+     "seed": 11,
+     "k": 1,
+     "schranke": 2363.593011,
+     "labels": 1160033
+    },
+    {
+     "seed": 11,
+     "k": 3,
+     "schranke": 2385.88717,
+     "labels": 1481048
+    },
+    {
+     "seed": 11,
+     "k": 5,
+     "schranke": 2388.194069,
+     "labels": 1768337
+    },
+    {
+     "seed": 11,
+     "k": 8,
+     "schranke": 2388.878156,
+     "labels": 1980625
+    },
+    {
+     "seed": 11,
+     "k": 12,
+     "schranke": 2388.878156,
+     "labels": 2379887
+    },
+    {
+     "seed": 11,
+     "k": 16,
+     "schranke": 2388.878156,
+     "labels": 2901665
+    }
+   ]
+  },
+  {
+   "id": "zufall_n50_b100",
+   "typ": "zufällig",
+   "n": 50,
+   "breite": 100,
+   "bezug": 16,
+   "ks": [
+    1,
+    3,
+    5,
+    8,
+    12,
+    16
+   ],
+   "quelle": {
+    "demo": "vormessung",
+    "datei": "out_v8_zufall_n50_w100.txt",
+    "text": "Rohdatei V8, Spalten typ n breite seed k schranke ... labels ... abgebr; abgebrochene Läufe fehlen"
+   },
+   "zeilen": [
+    {
+     "seed": 0,
+     "k": 1,
+     "schranke": 1069.334843,
+     "labels": 649622
+    },
+    {
+     "seed": 0,
+     "k": 3,
+     "schranke": 1096.920277,
+     "labels": 1079023
+    },
+    {
+     "seed": 0,
+     "k": 5,
+     "schranke": 1099.410253,
+     "labels": 1392156
+    },
+    {
+     "seed": 0,
+     "k": 8,
+     "schranke": 1102.383755,
+     "labels": 1833853
+    },
+    {
+     "seed": 0,
+     "k": 12,
+     "schranke": 1102.383755,
+     "labels": 2422923
+    },
+    {
+     "seed": 0,
+     "k": 16,
+     "schranke": 1102.412571,
+     "labels": 2874439
+    },
+    {
+     "seed": 1,
+     "k": 1,
+     "schranke": 1172.323265,
+     "labels": 295463
+    },
+    {
+     "seed": 1,
+     "k": 3,
+     "schranke": 1218.982886,
+     "labels": 462844
+    },
+    {
+     "seed": 1,
+     "k": 5,
+     "schranke": 1225.335948,
+     "labels": 579782
+    },
+    {
+     "seed": 1,
+     "k": 8,
+     "schranke": 1226.007911,
+     "labels": 665668
+    },
+    {
+     "seed": 1,
+     "k": 12,
+     "schranke": 1226.008442,
+     "labels": 823396
+    },
+    {
+     "seed": 1,
+     "k": 16,
+     "schranke": 1226.008442,
+     "labels": 904222
+    },
+    {
+     "seed": 2,
+     "k": 1,
+     "schranke": 1044.256014,
+     "labels": 710634
+    },
+    {
+     "seed": 2,
+     "k": 3,
+     "schranke": 1084.080342,
+     "labels": 789690
+    },
+    {
+     "seed": 2,
+     "k": 5,
+     "schranke": 1093.697498,
+     "labels": 1105560
+    },
+    {
+     "seed": 2,
+     "k": 8,
+     "schranke": 1093.697498,
+     "labels": 1332799
+    },
+    {
+     "seed": 2,
+     "k": 12,
+     "schranke": 1097.033329,
+     "labels": 1849832
+    },
+    {
+     "seed": 2,
+     "k": 16,
+     "schranke": 1097.033329,
+     "labels": 2217871
+    },
+    {
+     "seed": 3,
+     "k": 1,
+     "schranke": 1278.463352,
+     "labels": 324168
+    },
+    {
+     "seed": 3,
+     "k": 3,
+     "schranke": 1331.537686,
+     "labels": 573238
+    },
+    {
+     "seed": 3,
+     "k": 5,
+     "schranke": 1333.148699,
+     "labels": 793123
+    },
+    {
+     "seed": 3,
+     "k": 8,
+     "schranke": 1333.991067,
+     "labels": 803995
+    },
+    {
+     "seed": 3,
+     "k": 12,
+     "schranke": 1333.991067,
+     "labels": 1271934
+    },
+    {
+     "seed": 3,
+     "k": 16,
+     "schranke": 1333.991067,
+     "labels": 1303687
+    },
+    {
+     "seed": 4,
+     "k": 1,
+     "schranke": 1216.069648,
+     "labels": 387250
+    },
+    {
+     "seed": 4,
+     "k": 3,
+     "schranke": 1233.620369,
+     "labels": 472322
+    },
+    {
+     "seed": 4,
+     "k": 5,
+     "schranke": 1235.721301,
+     "labels": 501686
+    },
+    {
+     "seed": 4,
+     "k": 8,
+     "schranke": 1238.549049,
+     "labels": 658261
+    },
+    {
+     "seed": 4,
+     "k": 12,
+     "schranke": 1238.549049,
+     "labels": 830937
+    },
+    {
+     "seed": 4,
+     "k": 16,
+     "schranke": 1238.549049,
+     "labels": 974383
+    },
+    {
+     "seed": 5,
+     "k": 1,
+     "schranke": 1383.735429,
+     "labels": 371399
+    },
+    {
+     "seed": 5,
+     "k": 3,
+     "schranke": 1404.179703,
+     "labels": 543636
+    },
+    {
+     "seed": 5,
+     "k": 5,
+     "schranke": 1404.645451,
+     "labels": 640376
+    },
+    {
+     "seed": 5,
+     "k": 8,
+     "schranke": 1405.355196,
+     "labels": 841791
+    },
+    {
+     "seed": 5,
+     "k": 12,
+     "schranke": 1405.355196,
+     "labels": 1004908
+    },
+    {
+     "seed": 5,
+     "k": 16,
+     "schranke": 1405.355196,
+     "labels": 1371987
+    },
+    {
+     "seed": 6,
+     "k": 1,
+     "schranke": 1314.146025,
+     "labels": 229402
+    },
+    {
+     "seed": 6,
+     "k": 3,
+     "schranke": 1356.552495,
+     "labels": 292065
+    },
+    {
+     "seed": 6,
+     "k": 5,
+     "schranke": 1359.802966,
+     "labels": 405652
+    },
+    {
+     "seed": 6,
+     "k": 8,
+     "schranke": 1361.241208,
+     "labels": 550477
+    },
+    {
+     "seed": 6,
+     "k": 12,
+     "schranke": 1361.241208,
+     "labels": 556817
+    },
+    {
+     "seed": 6,
+     "k": 16,
+     "schranke": 1361.241208,
+     "labels": 739800
+    },
+    {
+     "seed": 7,
+     "k": 1,
+     "schranke": 1109.991546,
+     "labels": 506601
+    },
+    {
+     "seed": 7,
+     "k": 3,
+     "schranke": 1127.591925,
+     "labels": 689143
+    },
+    {
+     "seed": 7,
+     "k": 5,
+     "schranke": 1130.888995,
+     "labels": 937668
+    },
+    {
+     "seed": 7,
+     "k": 8,
+     "schranke": 1131.049398,
+     "labels": 1221737
+    },
+    {
+     "seed": 7,
+     "k": 12,
+     "schranke": 1131.232046,
+     "labels": 1435269
+    },
+    {
+     "seed": 7,
+     "k": 16,
+     "schranke": 1131.232046,
+     "labels": 1851252
+    },
+    {
+     "seed": 8,
+     "k": 1,
+     "schranke": 1124.395546,
+     "labels": 476208
+    },
+    {
+     "seed": 8,
+     "k": 3,
+     "schranke": 1176.655995,
+     "labels": 881237
+    },
+    {
+     "seed": 8,
+     "k": 5,
+     "schranke": 1179.682722,
+     "labels": 925845
+    },
+    {
+     "seed": 8,
+     "k": 8,
+     "schranke": 1179.682722,
+     "labels": 1021298
+    },
+    {
+     "seed": 8,
+     "k": 12,
+     "schranke": 1179.682722,
+     "labels": 1560154
+    },
+    {
+     "seed": 8,
+     "k": 16,
+     "schranke": 1179.703665,
+     "labels": 1965518
+    },
+    {
+     "seed": 9,
+     "k": 1,
+     "schranke": 1144.218479,
+     "labels": 461634
+    },
+    {
+     "seed": 9,
+     "k": 3,
+     "schranke": 1172.48089,
+     "labels": 704493
+    },
+    {
+     "seed": 9,
+     "k": 5,
+     "schranke": 1176.205405,
+     "labels": 736964
+    },
+    {
+     "seed": 9,
+     "k": 8,
+     "schranke": 1179.741843,
+     "labels": 1000099
+    },
+    {
+     "seed": 9,
+     "k": 12,
+     "schranke": 1179.747792,
+     "labels": 1397575
+    },
+    {
+     "seed": 9,
+     "k": 16,
+     "schranke": 1179.747792,
+     "labels": 1987343
+    },
+    {
+     "seed": 10,
+     "k": 1,
+     "schranke": 1188.334994,
+     "labels": 407268
+    },
+    {
+     "seed": 10,
+     "k": 3,
+     "schranke": 1215.756657,
+     "labels": 608510
+    },
+    {
+     "seed": 10,
+     "k": 5,
+     "schranke": 1220.86002,
+     "labels": 944018
+    },
+    {
+     "seed": 10,
+     "k": 8,
+     "schranke": 1221.532719,
+     "labels": 1008912
+    },
+    {
+     "seed": 10,
+     "k": 12,
+     "schranke": 1221.532719,
+     "labels": 998342
+    },
+    {
+     "seed": 10,
+     "k": 16,
+     "schranke": 1221.532719,
+     "labels": 1411112
+    },
+    {
+     "seed": 11,
+     "k": 1,
+     "schranke": 1276.027574,
+     "labels": 318531
+    },
+    {
+     "seed": 11,
+     "k": 3,
+     "schranke": 1318.972306,
+     "labels": 415405
+    },
+    {
+     "seed": 11,
+     "k": 5,
+     "schranke": 1318.972306,
+     "labels": 470790
+    },
+    {
+     "seed": 11,
+     "k": 8,
+     "schranke": 1319.059943,
+     "labels": 662530
+    },
+    {
+     "seed": 11,
+     "k": 12,
+     "schranke": 1319.059943,
+     "labels": 747930
+    },
+    {
+     "seed": 11,
+     "k": 16,
+     "schranke": 1319.059943,
+     "labels": 1032243
+    }
+   ]
+  },
+  {
+   "id": "zufall_n50_b40",
+   "typ": "zufällig",
+   "n": 50,
+   "breite": 40,
+   "bezug": 16,
+   "ks": [
+    1,
+    3,
+    5,
+    8,
+    12,
+    16
+   ],
+   "quelle": {
+    "demo": "vormessung",
+    "datei": "out_v8_zufall_n50_w40.txt",
+    "text": "Rohdatei V8, Spalten typ n breite seed k schranke ... labels ... abgebr; abgebrochene Läufe fehlen"
+   },
+   "zeilen": [
+    {
+     "seed": 0,
+     "k": 1,
+     "schranke": 1176.465537,
+     "labels": 147602
+    },
+    {
+     "seed": 0,
+     "k": 3,
+     "schranke": 1188.443466,
+     "labels": 230473
+    },
+    {
+     "seed": 0,
+     "k": 5,
+     "schranke": 1189.467618,
+     "labels": 238570
+    },
+    {
+     "seed": 0,
+     "k": 8,
+     "schranke": 1189.467618,
+     "labels": 307978
+    },
+    {
+     "seed": 0,
+     "k": 12,
+     "schranke": 1189.467618,
+     "labels": 386295
+    },
+    {
+     "seed": 0,
+     "k": 16,
+     "schranke": 1189.467618,
+     "labels": 466446
+    },
+    {
+     "seed": 1,
+     "k": 1,
+     "schranke": 1257.279699,
+     "labels": 96623
+    },
+    {
+     "seed": 1,
+     "k": 3,
+     "schranke": 1292.111198,
+     "labels": 125292
+    },
+    {
+     "seed": 1,
+     "k": 5,
+     "schranke": 1292.111198,
+     "labels": 153409
+    },
+    {
+     "seed": 1,
+     "k": 8,
+     "schranke": 1292.111198,
+     "labels": 153914
+    },
+    {
+     "seed": 1,
+     "k": 12,
+     "schranke": 1292.111198,
+     "labels": 190305
+    },
+    {
+     "seed": 1,
+     "k": 16,
+     "schranke": 1292.111198,
+     "labels": 224062
+    },
+    {
+     "seed": 2,
+     "k": 1,
+     "schranke": 1198.574799,
+     "labels": 185237
+    },
+    {
+     "seed": 2,
+     "k": 3,
+     "schranke": 1203.92397,
+     "labels": 194623
+    },
+    {
+     "seed": 2,
+     "k": 5,
+     "schranke": 1206.901869,
+     "labels": 233343
+    },
+    {
+     "seed": 2,
+     "k": 8,
+     "schranke": 1206.901869,
+     "labels": 274966
+    },
+    {
+     "seed": 2,
+     "k": 12,
+     "schranke": 1206.901869,
+     "labels": 331440
+    },
+    {
+     "seed": 2,
+     "k": 16,
+     "schranke": 1206.901869,
+     "labels": 335746
+    },
+    {
+     "seed": 3,
+     "k": 1,
+     "schranke": 1352.799917,
+     "labels": 101771
+    },
+    {
+     "seed": 3,
+     "k": 3,
+     "schranke": 1362.376154,
+     "labels": 123493
+    },
+    {
+     "seed": 3,
+     "k": 5,
+     "schranke": 1365.050463,
+     "labels": 181191
+    },
+    {
+     "seed": 3,
+     "k": 8,
+     "schranke": 1365.050463,
+     "labels": 194982
+    },
+    {
+     "seed": 3,
+     "k": 12,
+     "schranke": 1365.050463,
+     "labels": 229250
+    },
+    {
+     "seed": 3,
+     "k": 16,
+     "schranke": 1365.050463,
+     "labels": 236508
+    },
+    {
+     "seed": 4,
+     "k": 1,
+     "schranke": 1301.084091,
+     "labels": 105069
+    },
+    {
+     "seed": 4,
+     "k": 3,
+     "schranke": 1316.45836,
+     "labels": 125730
+    },
+    {
+     "seed": 4,
+     "k": 5,
+     "schranke": 1320.26301,
+     "labels": 143553
+    },
+    {
+     "seed": 4,
+     "k": 8,
+     "schranke": 1320.26301,
+     "labels": 148934
+    },
+    {
+     "seed": 4,
+     "k": 12,
+     "schranke": 1320.26301,
+     "labels": 165232
+    },
+    {
+     "seed": 4,
+     "k": 16,
+     "schranke": 1320.26301,
+     "labels": 218974
+    },
+    {
+     "seed": 5,
+     "k": 1,
+     "schranke": 1532.799596,
+     "labels": 102065
+    },
+    {
+     "seed": 5,
+     "k": 3,
+     "schranke": 1536.866266,
+     "labels": 124244
+    },
+    {
+     "seed": 5,
+     "k": 5,
+     "schranke": 1536.866266,
+     "labels": 156389
+    },
+    {
+     "seed": 5,
+     "k": 8,
+     "schranke": 1536.866266,
+     "labels": 163102
+    },
+    {
+     "seed": 5,
+     "k": 12,
+     "schranke": 1536.866266,
+     "labels": 176752
+    },
+    {
+     "seed": 5,
+     "k": 16,
+     "schranke": 1536.866266,
+     "labels": 208593
+    },
+    {
+     "seed": 6,
+     "k": 1,
+     "schranke": 1420.681145,
+     "labels": 99573
+    },
+    {
+     "seed": 6,
+     "k": 3,
+     "schranke": 1423.118338,
+     "labels": 99478
+    },
+    {
+     "seed": 6,
+     "k": 5,
+     "schranke": 1423.690935,
+     "labels": 106320
+    },
+    {
+     "seed": 6,
+     "k": 8,
+     "schranke": 1423.690935,
+     "labels": 107911
+    },
+    {
+     "seed": 6,
+     "k": 12,
+     "schranke": 1423.690935,
+     "labels": 147092
+    },
+    {
+     "seed": 6,
+     "k": 16,
+     "schranke": 1423.690935,
+     "labels": 188121
+    },
+    {
+     "seed": 7,
+     "k": 1,
+     "schranke": 1231.410012,
+     "labels": 87449
+    },
+    {
+     "seed": 7,
+     "k": 3,
+     "schranke": 1237.490653,
+     "labels": 116282
+    },
+    {
+     "seed": 7,
+     "k": 5,
+     "schranke": 1237.792629,
+     "labels": 174696
+    },
+    {
+     "seed": 7,
+     "k": 8,
+     "schranke": 1237.792629,
+     "labels": 127356
+    },
+    {
+     "seed": 7,
+     "k": 12,
+     "schranke": 1237.792629,
+     "labels": 176471
+    },
+    {
+     "seed": 7,
+     "k": 16,
+     "schranke": 1237.792629,
+     "labels": 192759
+    },
+    {
+     "seed": 8,
+     "k": 1,
+     "schranke": 1197.198328,
+     "labels": 149314
+    },
+    {
+     "seed": 8,
+     "k": 3,
+     "schranke": 1250.899917,
+     "labels": 214681
+    },
+    {
+     "seed": 8,
+     "k": 5,
+     "schranke": 1250.899917,
+     "labels": 205906
+    },
+    {
+     "seed": 8,
+     "k": 8,
+     "schranke": 1250.899917,
+     "labels": 235883
+    },
+    {
+     "seed": 8,
+     "k": 12,
+     "schranke": 1250.899917,
+     "labels": 279243
+    },
+    {
+     "seed": 8,
+     "k": 16,
+     "schranke": 1250.899917,
+     "labels": 335608
+    },
+    {
+     "seed": 9,
+     "k": 1,
+     "schranke": 1259.643272,
+     "labels": 137479
+    },
+    {
+     "seed": 9,
+     "k": 3,
+     "schranke": 1276.656495,
+     "labels": 159101
+    },
+    {
+     "seed": 9,
+     "k": 5,
+     "schranke": 1276.656495,
+     "labels": 195711
+    },
+    {
+     "seed": 9,
+     "k": 8,
+     "schranke": 1276.656495,
+     "labels": 224772
+    },
+    {
+     "seed": 9,
+     "k": 12,
+     "schranke": 1276.656495,
+     "labels": 273834
+    },
+    {
+     "seed": 9,
+     "k": 16,
+     "schranke": 1276.656495,
+     "labels": 327120
+    },
+    {
+     "seed": 10,
+     "k": 1,
+     "schranke": 1310.491178,
+     "labels": 137774
+    },
+    {
+     "seed": 10,
+     "k": 3,
+     "schranke": 1315.881241,
+     "labels": 173089
+    },
+    {
+     "seed": 10,
+     "k": 5,
+     "schranke": 1318.17629,
+     "labels": 195170
+    },
+    {
+     "seed": 10,
+     "k": 8,
+     "schranke": 1318.17629,
+     "labels": 233358
+    },
+    {
+     "seed": 10,
+     "k": 12,
+     "schranke": 1318.17629,
+     "labels": 239049
+    },
+    {
+     "seed": 10,
+     "k": 16,
+     "schranke": 1318.17629,
+     "labels": 292537
+    },
+    {
+     "seed": 11,
+     "k": 1,
+     "schranke": 1392.503477,
+     "labels": 89037
+    },
+    {
+     "seed": 11,
+     "k": 3,
+     "schranke": 1396.134367,
+     "labels": 111866
+    },
+    {
+     "seed": 11,
+     "k": 5,
+     "schranke": 1396.134367,
+     "labels": 130318
+    },
+    {
+     "seed": 11,
+     "k": 8,
+     "schranke": 1396.134367,
+     "labels": 140053
+    },
+    {
+     "seed": 11,
+     "k": 12,
+     "schranke": 1396.134367,
+     "labels": 147250
+    },
+    {
+     "seed": 11,
+     "k": 16,
+     "schranke": 1396.134367,
+     "labels": 170097
+    }
+   ]
+  },
+  {
+   "id": "zufall_n30_b100",
+   "typ": "zufällig",
+   "n": 30,
+   "breite": 100,
+   "bezug": 8,
+   "ks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    8
+   ],
+   "quelle": {
+    "demo": "ng-routen-demo",
+    "datei": "data/knick_n30.json",
+    "text": "Zeilen art = ng, k = 1 bis 5 und 8"
+   },
+   "zeilen": [
+    {
+     "seed": 0,
+     "k": 1,
+     "schranke": 756.121435,
+     "labels": 52481
+    },
+    {
+     "seed": 0,
+     "k": 2,
+     "schranke": 792.12356,
+     "labels": 62887
+    },
+    {
+     "seed": 0,
+     "k": 3,
+     "schranke": 803.54323,
+     "labels": 60340
+    },
+    {
+     "seed": 0,
+     "k": 4,
+     "schranke": 811.309538,
+     "labels": 68061
+    },
+    {
+     "seed": 0,
+     "k": 5,
+     "schranke": 811.309538,
+     "labels": 69427
+    },
+    {
+     "seed": 0,
+     "k": 8,
+     "schranke": 811.309538,
+     "labels": 90037
+    },
+    {
+     "seed": 1,
+     "k": 1,
+     "schranke": 822.369719,
+     "labels": 44946
+    },
+    {
+     "seed": 1,
+     "k": 2,
+     "schranke": 865.081529,
+     "labels": 53295
+    },
+    {
+     "seed": 1,
+     "k": 3,
+     "schranke": 865.190629,
+     "labels": 62594
+    },
+    {
+     "seed": 1,
+     "k": 4,
+     "schranke": 869.801249,
+     "labels": 67626
+    },
+    {
+     "seed": 1,
+     "k": 5,
+     "schranke": 869.801249,
+     "labels": 79899
+    },
+    {
+     "seed": 1,
+     "k": 8,
+     "schranke": 869.801249,
+     "labels": 102298
+    },
+    {
+     "seed": 2,
+     "k": 1,
+     "schranke": 847.122031,
+     "labels": 54898
+    },
+    {
+     "seed": 2,
+     "k": 2,
+     "schranke": 866.229636,
+     "labels": 66522
+    },
+    {
+     "seed": 2,
+     "k": 3,
+     "schranke": 869.165002,
+     "labels": 97003
+    },
+    {
+     "seed": 2,
+     "k": 4,
+     "schranke": 869.165002,
+     "labels": 74136
+    },
+    {
+     "seed": 2,
+     "k": 5,
+     "schranke": 869.165002,
+     "labels": 102222
+    },
+    {
+     "seed": 2,
+     "k": 8,
+     "schranke": 869.165002,
+     "labels": 104742
+    },
+    {
+     "seed": 3,
+     "k": 1,
+     "schranke": 833.483219,
+     "labels": 68349
+    },
+    {
+     "seed": 3,
+     "k": 2,
+     "schranke": 844.887682,
+     "labels": 73885
+    },
+    {
+     "seed": 3,
+     "k": 3,
+     "schranke": 848.796847,
+     "labels": 76497
+    },
+    {
+     "seed": 3,
+     "k": 4,
+     "schranke": 849.246366,
+     "labels": 91588
+    },
+    {
+     "seed": 3,
+     "k": 5,
+     "schranke": 849.246366,
+     "labels": 101198
+    },
+    {
+     "seed": 3,
+     "k": 8,
+     "schranke": 849.246366,
+     "labels": 150946
+    },
+    {
+     "seed": 4,
+     "k": 1,
+     "schranke": 777.217437,
+     "labels": 69898
+    },
+    {
+     "seed": 4,
+     "k": 2,
+     "schranke": 779.969672,
+     "labels": 83504
+    },
+    {
+     "seed": 4,
+     "k": 3,
+     "schranke": 785.880656,
+     "labels": 93621
+    },
+    {
+     "seed": 4,
+     "k": 4,
+     "schranke": 786.282556,
+     "labels": 93845
+    },
+    {
+     "seed": 4,
+     "k": 5,
+     "schranke": 786.282556,
+     "labels": 101266
+    },
+    {
+     "seed": 4,
+     "k": 8,
+     "schranke": 786.282556,
+     "labels": 111635
+    },
+    {
+     "seed": 5,
+     "k": 1,
+     "schranke": 880.176132,
+     "labels": 59761
+    },
+    {
+     "seed": 5,
+     "k": 2,
+     "schranke": 897.040444,
+     "labels": 52508
+    },
+    {
+     "seed": 5,
+     "k": 3,
+     "schranke": 899.445027,
+     "labels": 67405
+    },
+    {
+     "seed": 5,
+     "k": 4,
+     "schranke": 900.044368,
+     "labels": 76102
+    },
+    {
+     "seed": 5,
+     "k": 5,
+     "schranke": 900.044368,
+     "labels": 82877
+    },
+    {
+     "seed": 5,
+     "k": 8,
+     "schranke": 900.044368,
+     "labels": 117562
+    },
+    {
+     "seed": 6,
+     "k": 1,
+     "schranke": 792.809395,
+     "labels": 61825
+    },
+    {
+     "seed": 6,
+     "k": 2,
+     "schranke": 815.699752,
+     "labels": 77046
+    },
+    {
+     "seed": 6,
+     "k": 3,
+     "schranke": 818.977024,
+     "labels": 83301
+    },
+    {
+     "seed": 6,
+     "k": 4,
+     "schranke": 824.840745,
+     "labels": 107163
+    },
+    {
+     "seed": 6,
+     "k": 5,
+     "schranke": 824.840745,
+     "labels": 110810
+    },
+    {
+     "seed": 6,
+     "k": 8,
+     "schranke": 824.840745,
+     "labels": 124973
+    },
+    {
+     "seed": 7,
+     "k": 1,
+     "schranke": 760.080597,
+     "labels": 75056
+    },
+    {
+     "seed": 7,
+     "k": 2,
+     "schranke": 772.576393,
+     "labels": 126242
+    },
+    {
+     "seed": 7,
+     "k": 3,
+     "schranke": 772.576393,
+     "labels": 119487
+    },
+    {
+     "seed": 7,
+     "k": 4,
+     "schranke": 773.147849,
+     "labels": 114298
+    },
+    {
+     "seed": 7,
+     "k": 5,
+     "schranke": 773.806867,
+     "labels": 146325
+    },
+    {
+     "seed": 7,
+     "k": 8,
+     "schranke": 774.5302,
+     "labels": 139456
+    },
+    {
+     "seed": 8,
+     "k": 1,
+     "schranke": 726.963756,
+     "labels": 82145
+    },
+    {
+     "seed": 8,
+     "k": 2,
+     "schranke": 769.976351,
+     "labels": 106823
+    },
+    {
+     "seed": 8,
+     "k": 3,
+     "schranke": 775.652191,
+     "labels": 120727
+    },
+    {
+     "seed": 8,
+     "k": 4,
+     "schranke": 775.652191,
+     "labels": 131863
+    },
+    {
+     "seed": 8,
+     "k": 5,
+     "schranke": 775.970742,
+     "labels": 122016
+    },
+    {
+     "seed": 8,
+     "k": 8,
+     "schranke": 782.999169,
+     "labels": 154133
+    },
+    {
+     "seed": 9,
+     "k": 1,
+     "schranke": 795.250101,
+     "labels": 77559
+    },
+    {
+     "seed": 9,
+     "k": 2,
+     "schranke": 806.423834,
+     "labels": 82314
+    },
+    {
+     "seed": 9,
+     "k": 3,
+     "schranke": 814.818475,
+     "labels": 123248
+    },
+    {
+     "seed": 9,
+     "k": 4,
+     "schranke": 814.92229,
+     "labels": 127695
+    },
+    {
+     "seed": 9,
+     "k": 5,
+     "schranke": 814.92229,
+     "labels": 136734
+    },
+    {
+     "seed": 9,
+     "k": 8,
+     "schranke": 817.047448,
+     "labels": 181433
+    },
+    {
+     "seed": 10,
+     "k": 1,
+     "schranke": 835.735854,
+     "labels": 80407
+    },
+    {
+     "seed": 10,
+     "k": 2,
+     "schranke": 876.936182,
+     "labels": 75228
+    },
+    {
+     "seed": 10,
+     "k": 3,
+     "schranke": 884.188342,
+     "labels": 95643
+    },
+    {
+     "seed": 10,
+     "k": 4,
+     "schranke": 884.188342,
+     "labels": 112111
+    },
+    {
+     "seed": 10,
+     "k": 5,
+     "schranke": 884.188342,
+     "labels": 111747
+    },
+    {
+     "seed": 10,
+     "k": 8,
+     "schranke": 884.188342,
+     "labels": 119202
+    },
+    {
+     "seed": 11,
+     "k": 1,
+     "schranke": 773.533005,
+     "labels": 115237
+    },
+    {
+     "seed": 11,
+     "k": 2,
+     "schranke": 784.528535,
+     "labels": 118102
+    },
+    {
+     "seed": 11,
+     "k": 3,
+     "schranke": 786.050244,
+     "labels": 138632
+    },
+    {
+     "seed": 11,
+     "k": 4,
+     "schranke": 793.415623,
+     "labels": 148229
+    },
+    {
+     "seed": 11,
+     "k": 5,
+     "schranke": 794.920849,
+     "labels": 134256
+    },
+    {
+     "seed": 11,
+     "k": 8,
+     "schranke": 794.920849,
+     "labels": 199820
+    }
+   ]
+  },
+  {
+   "id": "cluster_n30_b100",
+   "typ": "gruppiert",
+   "n": 30,
+   "breite": 100,
+   "bezug": 8,
+   "ks": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    8
+   ],
+   "quelle": {
+    "demo": "ng-routen-demo",
+    "datei": "data/knick_n30.json",
+    "text": "Zeilen art = ng, k = 1 bis 5 und 8"
+   },
+   "zeilen": [
+    {
+     "seed": 0,
+     "k": 1,
+     "schranke": 359.234611,
+     "labels": 108725
+    },
+    {
+     "seed": 0,
+     "k": 2,
+     "schranke": 369.874082,
+     "labels": 137407
+    },
+    {
+     "seed": 0,
+     "k": 3,
+     "schranke": 373.806632,
+     "labels": 156707
+    },
+    {
+     "seed": 0,
+     "k": 4,
+     "schranke": 376.28082,
+     "labels": 167758
+    },
+    {
+     "seed": 0,
+     "k": 5,
+     "schranke": 377.464913,
+     "labels": 214820
+    },
+    {
+     "seed": 0,
+     "k": 8,
+     "schranke": 377.464913,
+     "labels": 254029
+    },
+    {
+     "seed": 1,
+     "k": 1,
+     "schranke": 659.762379,
+     "labels": 49078
+    },
+    {
+     "seed": 1,
+     "k": 2,
+     "schranke": 674.015116,
+     "labels": 77202
+    },
+    {
+     "seed": 1,
+     "k": 3,
+     "schranke": 676.045576,
+     "labels": 88429
+    },
+    {
+     "seed": 1,
+     "k": 4,
+     "schranke": 678.086755,
+     "labels": 77151
+    },
+    {
+     "seed": 1,
+     "k": 5,
+     "schranke": 678.086755,
+     "labels": 98090
+    },
+    {
+     "seed": 1,
+     "k": 8,
+     "schranke": 678.129199,
+     "labels": 128327
+    },
+    {
+     "seed": 2,
+     "k": 1,
+     "schranke": 413.360416,
+     "labels": 305098
+    },
+    {
+     "seed": 2,
+     "k": 2,
+     "schranke": 430.176824,
+     "labels": 453532
+    },
+    {
+     "seed": 2,
+     "k": 3,
+     "schranke": 431.437501,
+     "labels": 537467
+    },
+    {
+     "seed": 2,
+     "k": 4,
+     "schranke": 431.437501,
+     "labels": 487415
+    },
+    {
+     "seed": 2,
+     "k": 5,
+     "schranke": 431.548217,
+     "labels": 634602
+    },
+    {
+     "seed": 2,
+     "k": 8,
+     "schranke": 431.955806,
+     "labels": 1101093
+    },
+    {
+     "seed": 3,
+     "k": 1,
+     "schranke": 556.601674,
+     "labels": 91591
+    },
+    {
+     "seed": 3,
+     "k": 2,
+     "schranke": 566.520402,
+     "labels": 127456
+    },
+    {
+     "seed": 3,
+     "k": 3,
+     "schranke": 570.449046,
+     "labels": 135297
+    },
+    {
+     "seed": 3,
+     "k": 4,
+     "schranke": 572.585786,
+     "labels": 121119
+    },
+    {
+     "seed": 3,
+     "k": 5,
+     "schranke": 572.585786,
+     "labels": 140911
+    },
+    {
+     "seed": 3,
+     "k": 8,
+     "schranke": 573.027834,
+     "labels": 176711
+    },
+    {
+     "seed": 4,
+     "k": 1,
+     "schranke": 494.917463,
+     "labels": 173708
+    },
+    {
+     "seed": 4,
+     "k": 2,
+     "schranke": 524.72234,
+     "labels": 203539
+    },
+    {
+     "seed": 4,
+     "k": 3,
+     "schranke": 530.618367,
+     "labels": 280895
+    },
+    {
+     "seed": 4,
+     "k": 4,
+     "schranke": 531.55441,
+     "labels": 339359
+    },
+    {
+     "seed": 4,
+     "k": 5,
+     "schranke": 532.40752,
+     "labels": 294497
+    },
+    {
+     "seed": 4,
+     "k": 8,
+     "schranke": 532.848938,
+     "labels": 371208
+    },
+    {
+     "seed": 5,
+     "k": 1,
+     "schranke": 597.948775,
+     "labels": 344622
+    },
+    {
+     "seed": 5,
+     "k": 2,
+     "schranke": 604.888339,
+     "labels": 374016
+    },
+    {
+     "seed": 5,
+     "k": 3,
+     "schranke": 605.288194,
+     "labels": 437529
+    },
+    {
+     "seed": 5,
+     "k": 4,
+     "schranke": 606.011426,
+     "labels": 532787
+    },
+    {
+     "seed": 5,
+     "k": 5,
+     "schranke": 606.043412,
+     "labels": 620415
+    },
+    {
+     "seed": 5,
+     "k": 8,
+     "schranke": 606.043412,
+     "labels": 843532
+    },
+    {
+     "seed": 6,
+     "k": 1,
+     "schranke": 559.242068,
+     "labels": 71396
+    },
+    {
+     "seed": 6,
+     "k": 2,
+     "schranke": 570.032826,
+     "labels": 91338
+    },
+    {
+     "seed": 6,
+     "k": 3,
+     "schranke": 570.564419,
+     "labels": 98908
+    },
+    {
+     "seed": 6,
+     "k": 4,
+     "schranke": 574.033473,
+     "labels": 103211
+    },
+    {
+     "seed": 6,
+     "k": 5,
+     "schranke": 574.376919,
+     "labels": 120498
+    },
+    {
+     "seed": 6,
+     "k": 8,
+     "schranke": 575.363265,
+     "labels": 168081
+    },
+    {
+     "seed": 7,
+     "k": 1,
+     "schranke": 458.24051,
+     "labels": 182370
+    },
+    {
+     "seed": 7,
+     "k": 2,
+     "schranke": 470.932257,
+     "labels": 234044
+    },
+    {
+     "seed": 7,
+     "k": 3,
+     "schranke": 470.98928,
+     "labels": 255440
+    },
+    {
+     "seed": 7,
+     "k": 4,
+     "schranke": 471.30161,
+     "labels": 293436
+    },
+    {
+     "seed": 7,
+     "k": 5,
+     "schranke": 471.644566,
+     "labels": 343429
+    },
+    {
+     "seed": 7,
+     "k": 8,
+     "schranke": 471.644566,
+     "labels": 389618
+    },
+    {
+     "seed": 8,
+     "k": 1,
+     "schranke": 552.083736,
+     "labels": 159784
+    },
+    {
+     "seed": 8,
+     "k": 2,
+     "schranke": 558.879657,
+     "labels": 156975
+    },
+    {
+     "seed": 8,
+     "k": 3,
+     "schranke": 559.747147,
+     "labels": 247509
+    },
+    {
+     "seed": 8,
+     "k": 4,
+     "schranke": 561.397999,
+     "labels": 227669
+    },
+    {
+     "seed": 8,
+     "k": 5,
+     "schranke": 562.497144,
+     "labels": 209634
+    },
+    {
+     "seed": 8,
+     "k": 8,
+     "schranke": 563.760266,
+     "labels": 258090
+    },
+    {
+     "seed": 9,
+     "k": 1,
+     "schranke": 422.855296,
+     "labels": 102172
+    },
+    {
+     "seed": 9,
+     "k": 2,
+     "schranke": 440.743014,
+     "labels": 115920
+    },
+    {
+     "seed": 9,
+     "k": 3,
+     "schranke": 442.832287,
+     "labels": 118644
+    },
+    {
+     "seed": 9,
+     "k": 4,
+     "schranke": 443.323126,
+     "labels": 147438
+    },
+    {
+     "seed": 9,
+     "k": 5,
+     "schranke": 443.560134,
+     "labels": 145796
+    },
+    {
+     "seed": 9,
+     "k": 8,
+     "schranke": 446.625576,
+     "labels": 186853
+    },
+    {
+     "seed": 10,
+     "k": 1,
+     "schranke": 384.486951,
+     "labels": 147326
+    },
+    {
+     "seed": 10,
+     "k": 2,
+     "schranke": 394.510754,
+     "labels": 190433
+    },
+    {
+     "seed": 10,
+     "k": 3,
+     "schranke": 395.233587,
+     "labels": 234881
+    },
+    {
+     "seed": 10,
+     "k": 4,
+     "schranke": 395.955166,
+     "labels": 222529
+    },
+    {
+     "seed": 10,
+     "k": 5,
+     "schranke": 399.194006,
+     "labels": 241418
+    },
+    {
+     "seed": 10,
+     "k": 8,
+     "schranke": 399.562541,
+     "labels": 340785
+    },
+    {
+     "seed": 11,
+     "k": 1,
+     "schranke": 425.978594,
+     "labels": 131801
+    },
+    {
+     "seed": 11,
+     "k": 2,
+     "schranke": 432.257642,
+     "labels": 115926
+    },
+    {
+     "seed": 11,
+     "k": 3,
+     "schranke": 433.335402,
+     "labels": 145556
+    },
+    {
+     "seed": 11,
+     "k": 4,
+     "schranke": 433.335402,
+     "labels": 157541
+    },
+    {
+     "seed": 11,
+     "k": 5,
+     "schranke": 433.335402,
+     "labels": 181598
+    },
+    {
+     "seed": 11,
+     "k": 8,
+     "schranke": 433.708788,
+     "labels": 205661
+    }
+   ]
+  },
+  {
+   "id": "zufall_n30_b40",
+   "typ": "zufällig",
+   "n": 30,
+   "breite": 40,
+   "bezug": 30,
+   "ks": [
+    1,
+    3,
+    5,
+    8,
+    12,
+    30
+   ],
+   "quelle": {
+    "demo": "ng-routen-demo",
+    "datei": "data/elementar.json",
+    "text": "Zeilen n = 30, Breite 40, k = 1, 3, 5, 8, 12 und 30 (= elementar)"
+   },
+   "zeilen": [
+    {
+     "seed": 0,
+     "k": 1,
+     "schranke": 856.3526,
+     "labels": 13224
+    },
+    {
+     "seed": 0,
+     "k": 3,
+     "schranke": 862.5837,
+     "labels": 12602
+    },
+    {
+     "seed": 0,
+     "k": 5,
+     "schranke": 862.5837,
+     "labels": 17122
+    },
+    {
+     "seed": 0,
+     "k": 8,
+     "schranke": 862.5837,
+     "labels": 17951
+    },
+    {
+     "seed": 0,
+     "k": 12,
+     "schranke": 862.5837,
+     "labels": 19771
+    },
+    {
+     "seed": 0,
+     "k": 30,
+     "schranke": 862.5837,
+     "labels": 24970
+    },
+    {
+     "seed": 1,
+     "k": 1,
+     "schranke": 944.8315,
+     "labels": 14747
+    },
+    {
+     "seed": 1,
+     "k": 3,
+     "schranke": 944.8315,
+     "labels": 15662
+    },
+    {
+     "seed": 1,
+     "k": 5,
+     "schranke": 944.8315,
+     "labels": 15822
+    },
+    {
+     "seed": 1,
+     "k": 8,
+     "schranke": 944.8315,
+     "labels": 19257
+    },
+    {
+     "seed": 1,
+     "k": 12,
+     "schranke": 944.8315,
+     "labels": 20781
+    },
+    {
+     "seed": 1,
+     "k": 30,
+     "schranke": 944.8315,
+     "labels": 26724
+    },
+    {
+     "seed": 2,
+     "k": 1,
+     "schranke": 878.9065,
+     "labels": 24248
+    },
+    {
+     "seed": 2,
+     "k": 3,
+     "schranke": 881.6104,
+     "labels": 28612
+    },
+    {
+     "seed": 2,
+     "k": 5,
+     "schranke": 881.6104,
+     "labels": 40811
+    },
+    {
+     "seed": 2,
+     "k": 8,
+     "schranke": 881.6104,
+     "labels": 37604
+    },
+    {
+     "seed": 2,
+     "k": 12,
+     "schranke": 881.6104,
+     "labels": 51981
+    },
+    {
+     "seed": 2,
+     "k": 30,
+     "schranke": 881.6104,
+     "labels": 62838
+    },
+    {
+     "seed": 3,
+     "k": 1,
+     "schranke": 909.9232,
+     "labels": 27482
+    },
+    {
+     "seed": 3,
+     "k": 3,
+     "schranke": 911.4809,
+     "labels": 34514
+    },
+    {
+     "seed": 3,
+     "k": 5,
+     "schranke": 911.4809,
+     "labels": 34751
+    },
+    {
+     "seed": 3,
+     "k": 8,
+     "schranke": 911.4809,
+     "labels": 47593
+    },
+    {
+     "seed": 3,
+     "k": 12,
+     "schranke": 911.4809,
+     "labels": 45175
+    },
+    {
+     "seed": 3,
+     "k": 30,
+     "schranke": 911.4809,
+     "labels": 53095
+    },
+    {
+     "seed": 4,
+     "k": 1,
+     "schranke": 893.3945,
+     "labels": 19130
+    },
+    {
+     "seed": 4,
+     "k": 3,
+     "schranke": 893.3945,
+     "labels": 25388
+    },
+    {
+     "seed": 4,
+     "k": 5,
+     "schranke": 893.3945,
+     "labels": 24687
+    },
+    {
+     "seed": 4,
+     "k": 8,
+     "schranke": 893.3945,
+     "labels": 28903
+    },
+    {
+     "seed": 4,
+     "k": 12,
+     "schranke": 893.3945,
+     "labels": 30070
+    },
+    {
+     "seed": 4,
+     "k": 30,
+     "schranke": 893.3945,
+     "labels": 51955
+    },
+    {
+     "seed": 5,
+     "k": 1,
+     "schranke": 981.413,
+     "labels": 12211
+    },
+    {
+     "seed": 5,
+     "k": 3,
+     "schranke": 983.7944,
+     "labels": 14499
+    },
+    {
+     "seed": 5,
+     "k": 5,
+     "schranke": 983.7944,
+     "labels": 16578
+    },
+    {
+     "seed": 5,
+     "k": 8,
+     "schranke": 983.7944,
+     "labels": 21094
+    },
+    {
+     "seed": 5,
+     "k": 12,
+     "schranke": 983.7944,
+     "labels": 21231
+    },
+    {
+     "seed": 5,
+     "k": 30,
+     "schranke": 983.7944,
+     "labels": 28395
+    }
+   ]
+  }
+ ]
+}
